@@ -1,0 +1,630 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+:root{
+    --colorCeleste: #0093D6;
+    --colorVerde: #97BE31;
+    --colorAzul: #275B9E;
+
+}
+
+
+body {  
+    
+    background-color: white; 
+  }  
+
+
+
+
+/*****Estilos de nav-celular*/
+
+.btn-oficina-virtual{
+    background-color:var(--colorVerde) !important;
+    border-radius: 30px !important;
+
+    
+}
+
+.btn-cerrar{
+
+    justify-content: end;
+}
+
+.menu-celular{
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+  
+}
+
+.nav-link:hover{
+    
+        border-bottom: 3px solid var(--colorCeleste);
+
+}
+
+
+/*******Fin de estilos de nav-celular*****/
+
+
+/******Estilos de nav desktop****/
+
+
+
+.navbar-principal{
+   
+ 
+    border-radius: 40px;
+ 
+
+}
+
+.container-menu{
+   
+    gap: 15px;
+    font-size: 16px;
+}
+
+
+
+
+/****Estilos de Header*****/
+header{
+
+    background-color: var(--colorCeleste);
+
+
+}
+.principal{
+background-image: url(../img/imagen_principal.png);
+background-image: no-repeat;
+background-image: fixed;
+background-image: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+ background-position: center;
+ border-bottom-left-radius: 50em 1.9em;
+ border-bottom-right-radius: 50em 1.9em;
+ font-size: 70px;
+ line-height: 4rem;
+ font-family: 'Poppins', sans-serif;
+ 
+}
+
+.h6{
+
+    font-size: 20px !important; 
+}
+
+.linea{
+    border-radius: 40px;
+    color: var(--colorVerde);
+}
+
+.imagen-robot-principal{
+    position: relative;
+    top: 45px;
+} 
+.imagen-robot-principal:hover{
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+} 
+
+
+
+
+/*Fin estilos Header*/
+
+
+
+/*Estilos conexion-comunidad*/
+
+
+.texto-conexion-comunidad{
+    font-size: 80px;
+    color: black;
+    font-family:'Poppins', sans-serif; ;
+}
+
+
+
+/*Fin estilos conexion-comunidad*/
+
+
+
+/*Estilo Nuestros Planes*/
+
+.titulo-principal-planes{
+    font-size: 85px;
+    color: var(--colorCeleste);
+    font-family:'Poppins', sans-serif; 
+}
+.titulo-principal-planes strong{
+    color: black;
+}
+
+.robot-planes{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 120px;
+    right: 80px;
+    
+
+}
+
+.robot-planes:hover{
+   
+  
+    position: relative;
+    top: 125px;
+    cursor: pointer;
+
+    
+
+}
+
+.planes{
+  
+        background-image: url(../img/fondo_planes.png);
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         background-size: cover;
+         background-position: center;
+         border-bottom-left-radius: 50em 1.9em;
+         border-bottom-right-radius: 50em 1.9em;
+         border-top-left-radius: 50em 1.9em;
+         border-top-right-radius: 50em 1.9em;
+        
+         
+}
+.fibra-plan{
+   
+    border:white solid;
+    border-top-left-radius: 8em 8em;
+    border-bottom-left-radius: 8em 8em;
+    border-top-right-radius: 1em ;
+    border-bottom-right-radius: 1em ;
+    height: 100%;
+    width: auto;
+    background-color: hsla(0,100%,100%,0.7);
+    font-family: 'Poppins', sans-serif;
+ 
+  
+     
+}
+.plan-wifi{
+    margin-top: 10px;
+    border:white solid;
+    border-top-left-radius: 8em 8em;
+    border-bottom-left-radius: 8em 8em;
+    border-top-right-radius: 1em ;
+    border-bottom-right-radius: 1em ;
+    height: 90%;
+    width: auto;
+    background-color: hsla(0,100%,100%,0.7);
+    font-family: 'Poppins', sans-serif;
+ 
+     
+}
+.plan-mes{
+    margin-top: 10px;
+    border:white solid;
+    border-top-left-radius: 8em 8em;
+    border-bottom-left-radius: 8em 8em;
+    border-top-right-radius: 8em 8em ;
+    border-bottom-right-radius: 8em 8em ;
+    height: 60%;
+    width: auto;
+    background-color: hsla(0,100%,100%,0.7);
+
+}
+
+.precio-plan{
+    font-size:40px;
+}
+.precio-plan-wifi{
+    font-size: 25px;
+}
+.precio-plan-mes{
+    font-size: 40px;
+}
+.titulo-planes{
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+.boton-legales, .boton-cargo, u{
+   
+    
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    text-decoration: none; 
+  
+}
+
+u:hover{
+    text-decoration: underline;
+}
+
+
+
+.boton-contratar{
+   
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-top:3px ;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+.boton-contratar:hover{
+    color: black;
+    background-color: white;
+
+}
+
+.robot-planes-abajo{
+    position: relative;
+    top:60px;
+}
+
+.robot-planes-abajo:hover{
+    position: relative;
+    top:65px;
+    cursor: pointer;
+}
+
+
+/*Fin Estilos Nuestros Planes*/
+
+
+
+
+
+/*Estilos de modales*/
+
+.modal_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0 ;
+    pointer-events: none;
+    box-sizing: border-box;
+    position: fixed;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+  
+}
+
+.modal_container.show{
+    pointer-events: auto;
+    opacity: 1;
+
+}
+.modal-js{
+    background-color: #fff;
+
+    padding: 30px 50px;
+    width: 900px;
+    max-width: 100%;
+    border-radius: 22px;
+    z-index:1;
+}
+
+
+
+.cerrar{
+    color: #0093D6;
+    cursor: pointer;
+    
+}
+.texto-negro{
+    color: black;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+.modal-detalle-contratar{
+    background-color: #0093D6;
+    color: white;
+    border-radius: 22px;
+
+    
+}
+
+.modal-js hr{
+    background-color: var(--colorCeleste);
+    border: none;
+    height: 2px;
+
+}
+
+.alineacion-modal{
+    display: flex;
+    justify-content: start;
+}
+
+
+/*Fin estilos de modales */
+
+
+
+/*******Seccion contactos*******/
+
+.iconos-redes-sociales a{
+   margin: 5px;
+}
+.iconos-redes-sociales a:hover {
+  opacity: 0.2;
+}
+.vias-de-contacto h6{
+    font-size: 60px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+
+/*Seccion Formulario Contacto*/
+.form-control
+{
+    border-radius: 22px !important;
+    background-color: white !important;
+}
+
+.btn-envio-formulario{
+    background-color: var(--colorAzul) !important;
+    border-radius: 22px !important;
+    color: white !important;
+}
+.btn-envio-formulario:hover {
+    background-color: var(--colorCeleste) !important;
+ 
+}
+
+.btn-contratar-asesor{
+    background-color: var(--colorVerde)!important;
+    border-radius: 22px !important;
+    color: #fff !important;
+}
+
+.btn-contratar-asesor:hover{
+    background-color: var(--colorCeleste)!important;
+    border-radius: 22px !important;
+    color: #fff !important;
+}
+
+.formulario-contactos h4{
+    color: var(--colorCeleste) !important;
+}
+
+
+
+
+/*Fin seccion Formulario Contacto*/
+
+
+/******Fin seccion contactos*******/
+
+
+/*Estilos seccion velocidad-cobertura-informacion*/
+
+.velocidad-cobertura-informacion{
+    margin-top: 150px;
+    background-color: var(--colorAzul);
+    border-top-left-radius: 50em 1.3em;
+    border-top-right-radius: 50em 1.3em ;
+     
+
+}
+  .boton-cobertura-velocidad{
+    position: relative;
+    bottom: 150px;
+  }
+
+
+.boton-cobertura-velocidad:hover{
+   opacity: 0.8;
+   cursor: pointer;
+ 
+}
+
+
+
+/*Fin estilos de cobertura*/
+
+
+/*Estilos cobertura*/
+.informacion{
+    background-color: var(--colorAzul);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+.informacion li{
+    color: var(--colorCeleste);
+    font-size: 15px;
+}
+.informacion  a{
+    color: white !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.informacion a:hover{
+    opacity: 0.7;
+}
+.informacion p{
+    font-size: 20px;
+}
+/*Fin estilos de cobertura*/
+
+
+
+/*Estilos de Footer*/
+
+
+footer{
+    background-color: var(--colorAzul);
+    
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+}
+
+
+.logos-footer{
+    cursor: pointer;
+    gap: 2px;
+    
+}
+
+.logos-footer a:hover{
+    opacity: 0.7;
+}
+/***Fin estilos de Footer****/
+
+
+
+/*************BOTON WHATSAPP*****************/
+a{
+    text-decoration: none;
+  }
+  #whatsapp {
+      position: fixed;
+      bottom: 15px;
+      right:15px;
+  }
+  svg {
+      width: 80px;
+      display: inline-block;
+      vertical-align: middle;
+      filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+  }
+  circle {
+    fill: #25d366;
+  }
+  path {
+      fill:  #fff;
+  }
+
+  #whatsapp a {padding: 20px 0px;}
+
+  #whatsapp a::before {
+      content: 'Te asesoramos por whatsapp';
+      display: inline-block;
+      vertical-align: middle;
+      padding: 5px 10px;
+      margin-right: 10px;
+      color: rgba(0, 0, 0, 1);
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+      transition: .3s ease;
+      opacity: 0;
+      font-family: 'Poppins', sans-serif; 
+  }
+  #whatsapp:hover a::before {opacity: 1;}
+
+
+  /************FIN BOTON WHATSAPP*********************/
+
+
+
+
+/*Responsive Menu***/
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    .nav-desktop{
+        display:none;
+    }
+    .nav-celular{
+        display: block;
+    }
+    .principal{
+        padding: 50px;
+      
+    }
+   
+
+
+
+  
+}
+
+
+
+  
+ 
+  
+  
+  @media screen and (min-width: 640px) and (max-width: 999px) {
+    .nav-desktop{
+        display:none;
+    }
+    .nav-celular{
+        display: block;
+    }
+ 
+
+
+    .principal{
+        padding: 50px;
+      
+    }
+    
+    /*Menu responsive JS*/
+    .nav-bar{
+        display:none;
+    }
+    .menu{
+        margin-left: 0;
+        display: flex;
+    }
+
+
+
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .nav-desktop{
+        display:block;
+      
+    }
+    .nav-celular{
+        display: none;
+    }
+
+}
