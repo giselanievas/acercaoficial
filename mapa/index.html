@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Cobertura</title>
+</head>
+<body>
+    <div class="container-leaflet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <div class="leaflet-container">
+            <div id="map" class="responsive-leaflet"></div>
+        </div>
+        <style>
+            .container-leaflet {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-top: 56.25%;
+            }
+
+            .responsive-leaflet {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+            @media (max-width: 600px) {
+                .container-leaflet {
+                    padding-top: 150%;
+                }
+            }
+        </style>
+        <script>
+            const getFeatureCollection = async (map) => {
+                const url = 'http://api.app.infra.acerca.com.ar:8083/api/cobertura-web-acerca';
+                const featureCollectionResponse = await fetch(url).then(r=>r.json())
+                const featureCollection =  L.geoJSON(featureCollectionResponse, {
+                    style: (feature) => {
+                        return {color: feature.properties.color};
+                    },
+                    onEachFeature: (feature, layer) => {
+                        layer.bindTooltip(feature.properties.descripcion);
+                    }
+                }).addTo(map);
+                
+            }
+            const map = L.map('map', {attributionControl: false}).setView([-34.594357, -60.941248], 14);
+            const tiles = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+                maxZoom: 20,
+                subdomains:['mt0','mt1','mt2','mt3'],
+            }).addTo(map);
+            getFeatureCollection(map);
+        </script>
+    </div>
+</body>
+</html>

@@ -7,119 +7,128 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
-
     <title class="title">Acerca</title>
     <link rel="shortcut icon"  href="./img/acerca.png" />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 
 <header>
+
 <!--SECCION DE MENU DE CELULAR-TABLET-ESCRITORIO-->
 <section class="menus"> 
-  
-    <!--EMPIEZA MENU PARA CELULAR-->
-   <div class="nav-celular">
-      <nav class="navbar bg-body-tertiary  ">
-          <div class="container-fluid ">
+
+  <!--MENU PARA CELULAR-->
+
+ <div class="nav-celular">
+  <nav class="navbar bg-light">
+     <div class="container-fluid">
+         <a class="navbar-brand btn btn-lin" href="https://www.acerca.com.ar"><img src="./img/logo_acerca.png" alt=""></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
         
-              <a class="navbar-brand btn btn-lin" href="https://www.acerca.com.ar"><img src="./img/logo_acerca.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-              
-                <button type="button" class="btn-close btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body menu-celular">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#planes">Planes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Webmail</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Zona de cobertura</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Facturación</a>
-                      </li>
-                      
-              
-                                       
-                    </ul>
-<!--                     <a class="navbar-brand btn btn-link" href="https://oficinavirtual.grupojunin.com.ar/login" target="_blank"></a><button class="btn-oficina-virtual"><img src="./img/logo_oficina_virtual.png" alt="btn oficina virtual"></button></a> -->
-                 
+           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body menu-celular">
          
-              </div>
-            </div>
-          </div>
-        </nav>
+             <ul class="navbar-nav  flex-grow-1 pe-3">
+                 <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#planes"><strong>Planes</strong></a>
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#contactos"><strong>Contacto</strong></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link active" href="./zona_de_cobertura.html"><strong>Zona de cobertura</strong></a>
+                   </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" target="_blank" href="https://mail.acerca.com.ar/webmail/"><strong>Webmail</strong></a>
+                 </li>
+                 <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" target="_blank" href="https://www.grupojunin.com.ar/descargar/"><strong>Facturación</strong></a>
+              </li>
+                 <li class="nav-item ">
+                     <a class="navbar-brand btn btn-link" href="https://oficinavirtual.grupojunin.com.ar/login" target="_blank"> <button class="btn btn-light btn-oficina-virtual "><img src="./img/logo_oficina_virtual.png" alt="btn oficina virtual"></button></a>
+                 </li>
+           
+             </ul>
+            
+         </div>
+       </div>
+     </div>
+  </nav>
+ </div>
+
+ <!--FINALIZA MENU PARA CELULAR-->
+
+ <!--EMPIEZA MENU PARA ESCRITORIO/TABLET-->
+
+
   
-   </div>
-    <!--FINALIZA MENU PARA CELULAR-->
 
-    <!--EMPIEZA MENU PARA ESCRITORIO/TABLET-->
-    <div class="container nav-desktop ">
-        <div class="row col-12 justify-content-center pt-5">
-          <nav class="  navbar-principal navbar navbar-expand-lg shadow-lg bg-body-tertiary  ">
-            <div class="col-4">
-              <a class="navbar-brand btn btn-link" href="https://www.acerca.com.ar"><img src="./img/logo_acerca.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
 
-            </div>
+<div class="container nav-desktop">
+ <div class=" container col-10 ">
+     <div class="row text-center  pt-5">
+       <nav class="navbar-principal navbar navbar-expand-lg shadow-lg ">
+         <div class="col-4 text-start">
+           <a class="navbar-brand btn btn-link" href="https://www.acerca.com.ar"><img src="./img/logo_acerca.png" alt="logo acerca "></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
 
-            <div class=" col-6 row  collapse navbar-collapse container-menu" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#planes"><strong>Planes</strong></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#contactos"><strong>Contacto</strong></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" target="_blank" href="https://mail.acerca.com.ar/webmail/"><strong>Webmail</strong></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"><strong>Zona de cobertura</strong></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"><strong>Facturación</strong></a>
-                  </li>
-              </ul>
+         </div>
 
-            </div>
-            <div class="col-2  ">
-              <a class="navbar-brand btn btn-link" href="https://oficinavirtual.grupojunin.com.ar/login" target="_blank"> <button class="btn btn-light btn-oficina-virtual "><img src="./img/logo_oficina_virtual.png" alt="btn oficina virtual"></button></a>
-            </div>
-          </nav>
-        </div>
-    </div>
-     <!--FINALIZA MENU PARA ESCRITORIO/TABLET-->
+         <div class=" col-6 row  collapse navbar-collapse container-menu" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#planes"><strong>Planes</strong></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#contactos"><strong>Contacto</strong></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" target="_blank" href="https://mail.acerca.com.ar/webmail/"><strong>Webmail</strong></a>
+                 </li>
+                 <li class="nav-item">
+                  <a class="nav-link active" href="./zona_de_cobertura.html"><strong>Zona de cobertura</strong></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" target="_blank" href="https://www.grupojunin.com.ar/descargar/"><strong>Facturación</strong></a>
+               </li>
+           </ul>
+
+         </div>
+         <div class="row col-2  ">
+           <a class="navbar-brand btn btn-link" href="https://oficinavirtual.grupojunin.com.ar/login" target="_blank"> <button class="btn btn-light btn-oficina-virtual "><img class="logo-oficina" src="./img/logo_oficina_virtual.png" alt="btn oficina virtual"></button></a>
+         </div>
+       </nav>
+     </div>
+ </div> 
+</div>
+  <!--FINALIZA MENU PARA ESCRITORIO/TABLET-->
 
 </section> 
 <!--FINALIZA SECCION DE MENU DE CELULAR-TABLET-ESCRITORIO-->
-
 </header>
 
 <body>
+
+
+  
+
 <main>
 
 <!--SECCION DE VISTA PRINCIPAL-->
 <section class="principal">  
-  <div class="container">
+  <div class="container col-10">
     <div class="row">
-      <div class=" imagen-robot-principal order-sm-2 order-md-1  col-sm-10 col-md-5 col-lg-5 col-xl-5 ">
-        <img src="./img/robot_principal.png" width="100%" alt="">
+      <div class=" imagen-robot-principal  col-xs-10 col-sm-10 col-md-5 col-lg-5 col-xl-5 order-2 order-md-1 order-lg-1 order-xl-1 order-xxl-1">
+        <img src="./img/robot_principal.png" width="100%" alt="robot principal">
       </div>
-      <div class="texto-principal py-4 text-white  align-self-center order-sm-1 order-md-2 col-sm-8 col-md-7 col-lg-7 col-xl-7 ">
+      <div class="texto-principal py-4 text-white    align-self-center  order-1 order-md-2 order-lg-2 order-xl-2 order-xxl-2 col-sm-8 col-md-7 col-lg-7 col-xl-7 ">
         <p>¡Volá con <br> nuestra Fibra!<br>
           <img src="./img/linea_principal.png" alt="linea verde">        
         <h6>Internet de alta velocidad
@@ -141,7 +150,7 @@
              <div class="container conexion  text-center col-6 pt-4">
                   <img src="img/comunidad.png" alt="">
              </div>
-             <div class="texto-conexion-comunidad container text-center col-12 pt-4 ">
+             <div class="container texto-conexion-comunidad text-center col-12 pt-4 ">
                   <p>Conexión = Comunidad</p>
              </div>
             </div>
@@ -149,39 +158,43 @@
 </section>
 <!-- FINALIZA SECCION DE TITULO COMUNIDAD Y CONEXION-->   
 
+<seccion id="planes">
+     <!--TITULO DE PLANES CON ROBOT-->
 
-
-<!--COMIENZA SECCIONES DE PLANES-->
-<section id="planes" >
-    <!--TITULO DE PLANES-->
-      <div class="container col-10">
-        <div class="row col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 justify-content-center align-items-end mb-2">
-          <div class=" col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 titulo-principal-planes d-flex justify-content-end mt-5">
-            <p>Nuestros <strong>planes</strong></p>
-          </div>
-          <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ">
-            <img  class="robot-planes"src="./img/robot_mirando_derecha_arriba.png" alt="robot nuestros planes">
-          </div>
+     <div class="container col-10 justify-content-center">
+      <div class="row col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 justify-content-center align-items-end mb-2">
+        <div class=" col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 titulo-principal-planes  mt-2">
+          <p>Nuestros <strong>planes</strong></p>
+        </div>
+       
+        
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ">
+          <img  class="robot-planes"src="./img/robot_mirando_derecha_arriba.png"  alt="robot nuestros planes">
         </div>
       </div>
-    <!--FIN TITULOS DE PLANES-->
-  <!-------------CONTENEDOR DE TODOS LOS PLANES------------------>  
-  <div class="planes">
-  
-  
-  <!--PLANES DE FIBRA OPTICA ACA EMPIEZA EL CONTENEDOR-->
-    |   <div class=" container-fluid p-4">
-         <div class="row col-12  titulo-planes justify-content-center text-center">
-          <p><img  src="./img/icono_fibra.png" width="80px" alt="">Fibra <strong> óptica</strong></p>  
-         </div>
-         <!--CONTENEDOR QUE CONTIENE LOS PLANES-->
-         <div class="row  text-center justify-content-center p-2 ">
-           <!--COMIENZA UN PLAN 50 megas-->
-           <div class="col-sm-10 col-md-5 col-lg-5 col-xl-4 col-xxl-4 p-2">
-             <div class="fibra-plan p-1">
-              <div class="row align-items-center">
-                    <div class="col-6 p-2">
-                      <img class="img-fluid"src="./img/50_megas.png" alt="imagen 50 megas">
+    </div>
+    <div class=" col-12 titulo-planes-solo text-center">
+      <p>Nuestros <strong>planes</strong></p>
+    </div>
+   <!--FIN TITULOS DE PLANES-->
+ 
+  <!--CONTENEDOR DE TODOS LOS PLANES -->
+ 
+ 
+  <div class="container-fluid planes  text-center ">
+    <div class="container col-md-12 col-lg-10 col-sm-12 col-xl-10 col-xxl-10  ">
+      <div class="row justify-content-center ">
+          <!--************PLANES DE FIBRA***************-->
+        <div class="col-12 titulo-planes py-5">
+          <p><img  src="./img/icono_fibra.png" width="70px" alt="">Fibra <strong> óptica</strong></p> 
+        </div>
+      
+        <div class="row justify-content-center py-3">
+          <div class="col-sm-12 col-md-8 col-xs-10 col-lg-6 col-xl-6 col-xxl-6 py-2">
+            <div class="fibra-plan p-1">
+              <div class="row align-items-center p-2">
+                    <div class="col-6">
+                      <img class="img-fluid "src="./img/50_megas.png" alt="imagen 50 megas">
                     </div>
                     <div class="col-6 ">
                       <div class="precio-plan text-start">
@@ -228,14 +241,12 @@
                                           <i class="fa-regular fa-circle-xmark fa-2x"></i>
                                         </span>
                                         </div>
-                                        <h1>CARGO</h1>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id aperiam ipsam accusamus adipisci, natus est maiores maxime ut quis mollitia nam sequi? Blanditiis beatae commodi delectus. Vitae, tempora. Debitis.
-                                        Harum neque dolor praesentium hic amet beatae quidem excepturi dolore, fugit ipsam maiores necessitatibus blanditiis cum fuga iusto corporis delectus eius, explicabo porro repellat nam laboriosam ratione ea repellendus! Expedita?</p>
+                                        <p>Consultar por cargos de instalación</p>
                                         </div>
                                   </div>   
                               </div>
                               <!--BOTON CONTRATAR-->
-                                <div class="contratar">
+                                <div class="contratar py-1">
                                 <button class="boton-contratar" id="abrir">Contratar</button>
                                   <div class="modal_container" id="modal_container">
                                       <div class="modal-js p-4">
@@ -254,61 +265,77 @@
                                               <div class="container-fluid modal-detalle-contratar p-4 ">
                                                 <p><h4><strong>Plan 50 megas<br>
                                                   $3.204</strong></h4><br>
-
+     
                                                   <ul>
                                                     <li> Internet 50 MB</li>
-                                                    <li> Velocidad de bajada hasta 100 Megas</li>
+                                                    <li> Velocidad de subida hasta 50 megas</li>
+                                                    <li> Velocidad de bajada hasta 10 megas</li>
                                                     <li> Módem WiFi</li>
-                                                    <li> Velocidad de subida hasta 25 Megas</li>
-                                                    <li> Atención telefónica las 24 horas</li>
-
+                                                  
+     
                                                   </ul>
-  
+     
                                                 </p>
                                               </div>
                                               <!--ACA TERMINA DETALLE DEL PLAN--> 
                                             
                                              </div>
                                                                           
-                                              <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
-                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6   ">
-                                                <div class="formulario-contactos">
-                                                    
-                                                  <form >
-                                                    <h4><strong>Asesor</strong></h4>
-                                          
-                                                  
-                                                      <div class="mb-3">
-                                                        <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="default input example">
-                                                      </div>
-                                                      <div class="mb-3">
-                                                    
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" aria-describedby="emailHelp">
-                                                        
-                                                      </div>
-                                                      <div class="mb-3">
-                                                        <input class="form-control" type="text" placeholder="Teléfono" aria-label="default input example">
-                                                      </div>
-                                                      <div class="mb-3">
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Mensaje o consulta"></textarea>
-                                                      </div>
-                                                    
-                                                      <div class="d-grid">
-                                                        <button type="submit" class="btn btn-contratar-asesor">Enviar Mensaje</button>
+                                             <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
+                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+                                                                     
+                                                
+                                               
+                                              <div  class="formulario-contactos  pt-2"id="container-form">
+                                               
+                                                <form action="" method="POST" class="row  needs-validation" novalidate>
+
+                                                  <h4><strong>Asesor</strong></h4>
+                                                <div class="acerca-alert-invalid visually-hidden alert alert-warning d-none" role="alert">
+                                                    <span class="visually-hidden"></span>
+                                                </div>
+                                                <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                                                    <span class="visually-hidden"></span> Su mensaje no se ha podido enviar, por favor intente nuevamente. 
+                                                </div>
+                                                <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                                                    <span class="visually-hidden">:</span> Mensaje enviado.
+                                                </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaNombre" class="form-label "></label>
+                                                        <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                                                        <div class="invalid-feedback">
+                                                            Es necesario que suministre un nombre
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaEmail" class="form-label "></label>
+                                                        <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                                                        <div class="invalid-feedback">
+                                                            Es necesario que suministre un correo electrónico válido.
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaTelefono" class="form-label"></label>
+                                                        <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaMensaje" class="form-label"></label>
+                                                        <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="7"></textarea>
                                                     </div>
                                             
+                                                    <div class="d-grid mt-3">
+                                                        <button class="btn button-submit btn-contratar-asesor" type="submit">Enviar Mensaje</button>
+                                                    </div>
                                                   </form>
-                                            
-                                                </div>
-
-                                                
                                               </div>
+                                              </div>
+                                         
+                                        
                                               <!--ACA TERMINA FORMULARIO DE CONTACTO-->
-                                            
                                     
                                           </div>
-  
-  
+     
+     
                                         </div>
                                           
                                       </div>
@@ -317,76 +344,562 @@
                               <!--FIN DE BOTON CONTRATAR-->  
                             </div> 
                           <!--FINAL Modales planes-->
-  
+     
                    </div>
               </div>
             
             </div>
-           </div>
-           <!--FINALIZA UN PLAN 50 MEGAS-->
-
-           <!--COMIENZA UN PLAN 100 MEGAS-->
-           <div class="col-sm-10 col-md-5 col-lg-5 col-xl-4 col-xxl-4 p-2">
-             <div class="fibra-plan p-1">
-              <div class="row align-items-center">
-                    <div class="col-6 p-2">
-                      <img class="img-fluid"src="./img/100_megas.png" alt="imagen 100 megas">
-                    </div>
-                    <div class="col-6 ">
-                      <div class="precio-plan text-start">
-                        <p><strong>$3.204</strong></p>
+          </div>
+          <div class="col-sm-12 col-md-8 col-xs-10 col-lg-6 col-xl-6 col-xxl-6 py-2">
+              <div class="fibra-plan p-1">
+                <div class="row align-items-center p-2">
+                      <div class="col-6">
+                        <img class="img-fluid"src="./img/100_megas.png" alt="imagen 100 megas">
                       </div>
-                      
-                            <!--Modales de planes-->
-                            <div class=" container-fluid  acciones-planes text-start ">  
-                              <div class="legales">
-                              <a type="btn" class="boton-legales text-left" id="abrir">&#129046;<u>Legales</u></a>
-                                <div class="modal_container" id="modal_container">
-                                  <div class="modal-js">
-                                    <div class="container d-flex justify-content-end">
-                                      <span class="cerrar " id="cerrar">
-                                        <i class="fa-regular fa-circle-xmark fa-2x "></i>
-                                      </span>
-                                    </div>
-                                    <div class="container">
-                                        <div class="row">
-                                          <div class=" text-left col-12">
-                                            <p><h5>Legales 100 megas</h5></p>
-                                            <hr> 
-                                          </div>
-                                          <div class="col-12 text-left ">
-                                             <p>Servicio sujeto a disponibilidad técnica y geográfica.<br>
-                                              Downstream: hasta 100 Mbps / Upstream: hasta 20 Mbps.<br>
-                                              Acerca establece una cuota de transferencia de datos mensual de 600GB.<br>
-                                              Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial y/o superar la cuota de transferencia de datos antes indicada.<br>
-                                              La utilización del servicio por encima de esa cuota es considerada excesiva y una violación a la política de uso aceptable de servicios de Acerca.<br>
-                                              En caso de superar dicha cuota, Acerca se reserva el derecho a bajar la velocidad del servicio a 6 Mbps, a suspenderlo, como así también, a tomar cualquier otra acción que considere necesaria.<br>
-                                              </p>
-                                          </div>
-                                        </div>
-                                    </div>       
-                                  </div>
-                                </div>   
-                              </div>
-                              <div class="cargo-de-instalaciones">
-                              <a type="btn"class="boton-cargo text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
+                      <div class="col-6 ">
+                        <div class="precio-plan text-start">
+                          <p><strong>$4.401</strong></p>
+                        </div>
+                        
+                              <!--Modales de planes-->
+                              <div class=" container-fluid  acciones-planes text-start ">  
+                                <div class="legales">
+                                <a type="btn" class="boton-legales text-left" id="abrir">&#129046;<u>Legales</u></a>
                                   <div class="modal_container" id="modal_container">
-                                      <div class="modal-js">
-                                        <div class="container d-flex justify-content-end">
-                                        <span class="cerrar" id="cerrar">
-                                          <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                    <div class="modal-js">
+                                      <div class="container d-flex justify-content-end">
+                                        <span class="cerrar " id="cerrar">
+                                          <i class="fa-regular fa-circle-xmark fa-2x "></i>
                                         </span>
-                                        </div>
-                                        <h1>CARGO</h1>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id aperiam ipsam accusamus adipisci, natus est maiores maxime ut quis mollitia nam sequi? Blanditiis beatae commodi delectus. Vitae, tempora. Debitis.
-                                        Harum neque dolor praesentium hic amet beatae quidem excepturi dolore, fugit ipsam maiores necessitatibus blanditiis cum fuga iusto corporis delectus eius, explicabo porro repellat nam laboriosam ratione ea repellendus! Expedita?</p>
-                                        </div>
+                                      </div>
+                                      <div class="container">
+                                          <div class="row">
+                                            <div class=" text-left col-12">
+                                              <p><h5>Legales 100 megas</h5></p>
+                                              <hr> 
+                                            </div>
+                                            <div class="col-12 text-left ">
+                                              <p>Servicio sujeto a disponibilidad técnica y geográfica.<br>
+                                                Downstream: hasta 100 Mbps / Upstream: hasta 20 Mbps.<br>
+                                                Acerca establece una cuota de transferencia de datos mensual de 600GB.<br>
+                                                Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial y/o superar la cuota de transferencia de datos antes indicada.<br>
+                                                La utilización del servicio por encima de esa cuota es considerada excesiva y una violación a la política de uso aceptable de servicios de Acerca.<br>
+                                                En caso de superar dicha cuota, Acerca se reserva el derecho a bajar la velocidad del servicio a 6 Mbps, a suspenderlo, como así también, a tomar cualquier otra acción que considere necesaria.<br>
+                                                </p>
+                                            </div>
+                                          </div>
+                                      </div>       
+                                    </div>
                                   </div>   
+                                </div>
+                                <div class="cargo-de-instalaciones">
+                                <a type="btn"class="boton-cargo text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
+                                    <div class="modal_container" id="modal_container">
+                                        <div class="modal-js">
+                                          <div class="container d-flex justify-content-end">
+                                          <span class="cerrar" id="cerrar">
+                                            <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                          </span>
+                                          </div>
+                                          <p>Consultar por cargos de instalación</p>
+                                          </div>
+                                    </div>   
+                                </div>
+                                <!--BOTON CONTRATAR-->
+                                  <div class="contratar p-1">
+                                  <button class="boton-contratar" id="abrir">Contratar</button>
+                                    <div class="modal_container overflow" id="modal_container">
+                                        <div class="modal-js p-4">
+                                          <div class="container d-flex justify-content-end">
+                                            <span class="cerrar" id="cerrar">
+                                                <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                            </span>
+                                          </div>  
+                                          <div class="container">
+                                            <div class="row">
+                                              <div class="col-12">
+                                                <p><h2><img  class="px-2 align-self-center "src="./img/icono_fibra_celeste.png" width="60px" alt="icono fibra optica celeste"> Fibra <strong> óptica</strong></h2></p> 
+                                              </div>  
+                                              <div class="col-md-6 col-lg-6 col-sm-12 col-xl-6 col-xxl-6  ">
+                                                <!--ACA VA DETALLE DEL PLAN-->                                      
+                                                <div class="container-fluid modal-detalle-contratar p-4 ">
+                                                  <p><h4><strong>Plan 100 megas<br>
+                                                    $4.401</strong></h4><br>
+       
+                                                    <ul>
+                                                      <li> Internet 100 MB</li>
+                                                      <li> Velocidad de subida hasta 100 megas</li>
+                                                      <li> Velocidad de bajada hasta 20 megas</li>
+                                                      <li> Módem WiFi</li>
+                                                 
+       
+                                                    </ul>
+       
+                                                  </p>
+                                                </div>
+                                                <!--ACA TERMINA DETALLE DEL PLAN--> 
+                                              
+                                               </div>
+                                                                            
+                                                <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+                                                                     
+                                                
+                                               
+                                                <div  class="formulario-contactos  pt-2"id="container-form">
+                                                 
+                                                  <form action="" method="POST" class="row  needs-validation" novalidate>
+
+                                                    <h4><strong>Asesor</strong></h4>
+                                                  <div class="acerca-alert-invalid visually-hidden alert alert-warning d-none" role="alert">
+                                                      <span class="visually-hidden"></span>
+                                                  </div>
+                                                  <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                                                      <span class="visually-hidden"></span> Su mensaje no se ha podido enviar, por favor intente nuevamente. 
+                                                  </div>
+                                                  <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                                                      <span class="visually-hidden">:</span> Mensaje enviado.
+                                                  </div>
+                                                      <div class="">
+                                                          <label for="contactFormAcercaNombre" class="form-label "></label>
+                                                          <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                                                          <div class="invalid-feedback">
+                                                              Es necesario que suministre un nombre
+                                                          </div>
+                                                      </div>
+                                                      <div class="">
+                                                          <label for="contactFormAcercaEmail" class="form-label "></label>
+                                                          <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                                                          <div class="invalid-feedback">
+                                                              Es necesario que suministre un correo electrónico válido.
+                                                          </div>
+                                                      </div>
+                                                      <div class="">
+                                                          <label for="contactFormAcercaTelefono" class="form-label"></label>
+                                                          <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
+                                                      </div>
+                                                      <div class="">
+                                                          <label for="contactFormAcercaMensaje" class="form-label"></label>
+                                                          <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="7"></textarea>
+                                                      </div>
+                                              
+                                                      <div class="d-grid mt-3">
+                                                          <button class="btn button-submit btn-contratar-asesor" type="submit">Enviar Mensaje</button>
+                                                      </div>
+                                                    </form>
+                                                </div>
+                                                </div>
+                                           
+                                          
+                                                <!--ACA TERMINA FORMULARIO DE CONTACTO-->
+                                              
+                                      
+                                            </div>
+       
+       
+                                          </div>
+                                            
+                                        </div>
+                                    </div>  
+                                  </div>  
+                                <!--FIN DE BOTON CONTRATAR-->  
+                              </div> 
+                            <!--FINAL Modales planes-->
+       
+                     </div>
+                </div>
+              
+              </div>
+          </div>
+        </div>
+
+        <!--*************************PLAN INALAMBRICO***********************-->
+        <div class=" col-12 titulo-planes pt-5">
+          <p><img  src="./img/icono_wifi.png" width="70px" alt="icono wifi"> <strong> Inalámbrico</strong></p> 
+        </div>
+   
+        <div class="row justify-content-center pt-5">
+          <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 align-items-center pt-2">
+            <div class=" row align-items-center plan-inalambrico">
+            <div class="col-3 ">
+              <img  class="img-plan-inalambrico"src="./img/4_megas.png " width="130px" height="auto" alt="imagen-4-megas">
+            </div>  
+                     
+            <div class="col-7 offset-2">
+              <div class="precio-plan-inalambrico text-start">
+                <p><strong>$2.023</strong></p>
+              </div>
+              <div>
+                      <!--Modales de planes-->
+                      <div class=" container-fluid acciones-planes text-start">  
+                        <div class="legales">
+                        <a type="btn" class="boton-legales-inalambrico" id="abrir">&#129046;<u>Legales</u></a>
+                          <div class="modal_container" id="modal_container">
+                            <div class="modal-js">
+                              <div class="container d-flex justify-content-end">
+                                <span class="cerrar " id="cerrar">
+                                  <i class="fa-regular fa-circle-xmark fa-2x "></i>
+                                </span>
                               </div>
-                                <div class="contratar">
+                              <div class="container">
+                                  <div class="row">
+                                    <div class=" text-left col-12">
+                                      <p><h5>Legales 4 megas</h5></p>
+                                      <hr> 
+                                    </div>
+                                    <div class="col-12 text-left ">
+                                       <p>Servicio sujeto a disponibilidad técnica y geográfica.<br>
+                                         Downstream: hasta 4 Mbps / Upstream: hasta 1 Mbps.<br>                                           
+                                         Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial.<br>
+                                        </p>
+                                    </div>
+                                  </div>
+                              </div>       
+                            </div>
+                          </div>   
+                        </div>
+                        <div class="cargo-de-instalaciones">
+                        <a type="btn"class="boton-cargo-inalambrico text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
+                            <div class="modal_container" id="modal_container">
+                                <div class="modal-js">
+                                  <div class="container d-flex justify-content-end">
+                                  <span class="cerrar" id="cerrar">
+                                    <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                  </span>
+                                  </div>
+                                   <p>Consultar por cargos de instalación</p>
+                                  </div>
+                            </div>   
+                        </div>
+                         <!--BOTON CONTRATAR-->
+                         <div class="contratar py-1">
+                          <button class="boton-contratar" id="abrir">Contratar</button>
+                            <div class="modal_container" id="modal_container">
+                                <div class="modal-js p-4">
+                                  <div class="container d-flex justify-content-end">
+                                    <span class="cerrar" id="cerrar">
+                                        <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                    </span>
+                                  </div>  
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <p><h2><img  class="px-2 align-self-center "src="./img/icono_fibra_celeste.png" width="60px" alt="icono fibra optica celeste">  <strong> Inalámbrico</strong></h2></p> 
+                                      </div>  
+                                      <div class="col-md-6 col-lg-6 col-sm-12 col-xl-6 col-xxl-6  ">
+                                        <!--ACA VA DETALLE DEL PLAN-->                                      
+                                        <div class="container-fluid modal-detalle-contratar p-4 ">
+                                          <p><h4><strong>Plan 4 megas<br>
+                                            $2.023</strong></h4><br>
+
+                                            <ul>
+                                              <li> Internet 4 MB</li>
+                                              <li> Velocidad de subida hasta 4 megas</li>
+                                              <li> Velocidad de bajada hasta 1 mega</li>
+                                              <li> Módem WiFi</li>
+                                            
+
+                                            </ul>
+
+                                          </p>
+                                        </div>
+                                        <!--ACA TERMINA DETALLE DEL PLAN--> 
+                                      
+                                       </div>
+                                                                    
+                                                  <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
+                                                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+                                                                     
+                                                
+                                               
+                                                    <div  class="formulario-contactos  pt-2"id="container-form">
+                                                     
+                                                      <form action="" method="POST" class="row  needs-validation" novalidate>
+    
+                                                        <h4><strong>Asesor</strong></h4>
+                                                      <div class="acerca-alert-invalid visually-hidden alert alert-warning d-none" role="alert">
+                                                          <span class="visually-hidden"></span>
+                                                      </div>
+                                                      <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                                                          <span class="visually-hidden"></span> Su mensaje no se ha podido enviar, por favor intente nuevamente. 
+                                                      </div>
+                                                      <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                                                          <span class="visually-hidden">:</span> Mensaje enviado.
+                                                      </div>
+                                                          <div class="">
+                                                              <label for="contactFormAcercaNombre" class="form-label "></label>
+                                                              <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                                                              <div class="invalid-feedback">
+                                                                  Es necesario que suministre un nombre
+                                                              </div>
+                                                          </div>
+                                                          <div class="">
+                                                              <label for="contactFormAcercaEmail" class="form-label "></label>
+                                                              <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                                                              <div class="invalid-feedback">
+                                                                  Es necesario que suministre un correo electrónico válido.
+                                                              </div>
+                                                          </div>
+                                                          <div class="">
+                                                              <label for="contactFormAcercaTelefono" class="form-label"></label>
+                                                              <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
+                                                          </div>
+                                                          <div class="">
+                                                              <label for="contactFormAcercaMensaje" class="form-label"></label>
+                                                              <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="7"></textarea>
+                                                          </div>
+                                                  
+                                                          <div class="d-grid mt-3">
+                                                              <button class="btn button-submit btn-contratar-asesor" type="submit">Enviar Mensaje</button>
+                                                          </div>
+                                                        </form>
+                                                    </div>
+                                                    </div>
+                                               
+                                              
+                                                    <!--ACA TERMINA FORMULARIO DE CONTACTO-->
+                                                  
+                                      
+                              
+                                    </div>
+
+
+                                  </div>
+                                    
+                                </div>
+                            </div>  
+                          </div>  
+                        <!--FIN DE BOTON CONTRATAR--> 
+                      </div> 
+                    <!--FINAL Modales planes-->
+              </div>
+
+            </div>
+            <div>
+             
+            </div>
+
+            </div>
+          
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 align-items-center pt-2">
+          <div class=" row align-items-center plan-inalambrico  p-1">
+          <div class="col-3 ">
+              <img class="img-plan-inalambrico " src="./img/8_megas.png" width="130px" height="auto" alt="imagen-4-megas">
+          </div>  
+                     
+            <div class="col-7 offset-2">
+              <div class="precio-plan-inalambrico text-start">
+                <p><strong>$3.456 </strong></p>
+              </div>
+              <div>
+                      <!--Modales de planes-->
+                      <div class=" container-fluid acciones-planes text-start">  
+                        <div class="legales">
+                        <a type="btn" class="boton-legales-inalambrico" id="abrir">&#129046;<u>Legales</u></a>
+                          <div class="modal_container" id="modal_container">
+                            <div class="modal-js">
+                              <div class="container d-flex justify-content-end">
+                                <span class="cerrar " id="cerrar">
+                                  <i class="fa-regular fa-circle-xmark fa-2x "></i>
+                                </span>
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class=" text-left col-12">
+                                      <p><h5>Legales 8 megas</h5></p>
+                                      <hr> 
+                                    </div>
+                                    <div class="col-12 text-left ">
+                                      <p>LServicio sujeto a disponibilidad técnica y geográfica.<br>
+                                        Downstream: hasta 8 Mbps / Upstream: hasta 2 Mbps.<br>
+                                        Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial.<br></p>
+                                    </div>
+                                  </div>
+                              </div>       
+                            </div>
+                          </div>   
+                        </div>
+                        <div class="cargo-de-instalaciones">
+                        <a type="btn"class="boton-cargo-inalambrico text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
+                            <div class="modal_container" id="modal_container">
+                                <div class="modal-js">
+                                  <div class="container d-flex justify-content-end">
+                                  <span class="cerrar" id="cerrar">
+                                    <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                  </span>
+                                  </div>
+                                  <p>Consultar por cargos de instalación</p>
+                                  </div>
+                            </div>   
+                        </div>
+                          <!--BOTON CONTRATAR-->
+                          <div class="contratar py-1">
+                            <button class="boton-contratar" id="abrir">Contratar</button>
+                              <div class="modal_container" id="modal_container">
+                                  <div class="modal-js p-4">
+                                    <div class="container d-flex justify-content-end">
+                                      <span class="cerrar" id="cerrar">
+                                          <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                      </span>
+                                    </div>  
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <p><h2><img  class="px-2 align-self-center "src="./img/icono_fibra_celeste.png" width="60px" alt="icono fibra optica celeste">  <strong> Inalámbrico</strong></h2></p> 
+                                        </div>  
+                                        <div class="col-md-6 col-lg-6 col-sm-12 col-xl-6 col-xxl-6  ">
+                                          <!--ACA VA DETALLE DEL PLAN-->                                      
+                                          <div class="container-fluid modal-detalle-contratar p-4 ">
+                                            <p><h4><strong>Plan 8 megas<br>
+                                              $3.456</strong></h4><br>
+  
+                                              <ul>
+                                                <li> Internet 8 MB</li>
+                                                <li> Velocidad de subida hasta 8 megas</li>
+                                                <li> Velocidad de bajada hasta 2 megas</li>
+                                                <li> Módem WiFi</li>
+                                              
+  
+                                              </ul>
+  
+                                            </p>
+                                          </div>
+                                          <!--ACA TERMINA DETALLE DEL PLAN--> 
+                                        
+                                         </div>
+                                                                      
+                                         <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
+                                         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+                                                                     
+                                                
+                                               
+                                          <div  class="formulario-contactos  pt-2"id="container-form">
+                                           
+                                            <form action="" method="POST" class="row  needs-validation" novalidate>
+
+                                              <h4><strong>Asesor</strong></h4>
+                                            <div class="acerca-alert-invalid visually-hidden alert alert-warning d-none" role="alert">
+                                                <span class="visually-hidden"></span>
+                                            </div>
+                                            <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                                                <span class="visually-hidden"></span> Su mensaje no se ha podido enviar, por favor intente nuevamente. 
+                                            </div>
+                                            <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                                                <span class="visually-hidden">:</span> Mensaje enviado.
+                                            </div>
+                                                <div class="">
+                                                    <label for="contactFormAcercaNombre" class="form-label "></label>
+                                                    <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                                                    <div class="invalid-feedback">
+                                                        Es necesario que suministre un nombre
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <label for="contactFormAcercaEmail" class="form-label "></label>
+                                                    <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                                                    <div class="invalid-feedback">
+                                                        Es necesario que suministre un correo electrónico válido.
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <label for="contactFormAcercaTelefono" class="form-label"></label>
+                                                    <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
+                                                </div>
+                                                <div class="">
+                                                    <label for="contactFormAcercaMensaje" class="form-label"></label>
+                                                    <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="7"></textarea>
+                                                </div>
+                                        
+                                                <div class="d-grid mt-3">
+                                                    <button class="btn button-submit btn-contratar-asesor" type="submit">Enviar Mensaje</button>
+                                                </div>
+                                              </form>
+                                          </div>
+                                          </div>
+                                     
+                                    
+                                          <!--ACA TERMINA FORMULARIO DE CONTACTO-->
+                                
+                                      </div>
+  
+  
+                                    </div>
+                                      
+                                  </div>
+                              </div>  
+                          </div>  
+                          <!--FIN DE BOTON CONTRATAR--> 
+                      </div> 
+                    <!--FINAL Modales planes-->
+              </div>
+
+            </div>
+            <div>
+             </div>
+
+            </div>
+          
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4 align-items-center py-2">
+            <div class=" row align-items-center plan-inalambrico  p-1">
+            <div class="col-3 ">
+              <img class="img-plan-inalambrico" src="./img/12_megas.png" width="130px" height="auto" alt="imagen-4-megas">
+            </div>  
+                     
+            <div class="col-7 offset-2">
+              <div class="precio-plan-inalambrico text-start">
+                <p><strong>$5.110</strong></p>
+              </div>
+              <div>
+                      <!--Modales de planes-->
+                      <div class=" container-fluid acciones-planes text-start">  
+                        <div class="legales">
+                        <a type="btn" class="boton-legales-inalambrico" id="abrir">&#129046;<u>Legales</u></a>
+                          <div class="modal_container" id="modal_container">
+                            <div class="modal-js">
+                              <div class="container d-flex justify-content-end">
+                                <span class="cerrar " id="cerrar">
+                                  <i class="fa-regular fa-circle-xmark fa-2x "></i>
+                                </span>
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class=" text-left col-12">
+                                      <p><h5>Legales 12 megas</h5></p>
+                                      <hr> 
+                                    </div>
+                                    <div class="col-12 text-left ">
+                                      <p>Servicio sujeto a disponibilidad técnica y geográfica.<br>
+                                        Downstream: hasta 12 Mbps / Upstream: hasta 3 Mbps.<br>
+                                        Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial.<br>
+                                      </p>
+                                        </p>
+                                    </div>
+                                  </div>
+                              </div>       
+                            </div>
+                          </div>   
+                        </div>
+                        <div class="cargo-de-instalaciones">
+                        <a type="btn"class="boton-cargo-inalambrico text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
+                            <div class="modal_container" id="modal_container">
+                                <div class="modal-js">
+                                  <div class="container d-flex justify-content-end">
+                                  <span class="cerrar" id="cerrar">
+                                    <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                  </span>
+                                  </div>
+                                  
+                                  <p>Consultar por cargos de instalación</p>
+                                  </div>
+                            </div>   
+                        </div>
+                              <!--BOTON CONTRATAR-->
+                              <div class="contratar py-1">
                                 <button class="boton-contratar" id="abrir">Contratar</button>
                                   <div class="modal_container" id="modal_container">
-                                      <div class="modal-js">
+                                      <div class="modal-js p-4">
                                         <div class="container d-flex justify-content-end">
                                           <span class="cerrar" id="cerrar">
                                               <i class="fa-regular fa-circle-xmark fa-2x"></i>
@@ -394,467 +907,280 @@
                                         </div>  
                                         <div class="container">
                                           <div class="row">
-                                          <div class="col-6 ">
-                                            
-                                              <p><img src="./img/icono_fibra.png" alt="">Fibra óptica</p>  
-                                              <div class="container-fluid modal-detalle-contratar ">
-                                                <p>Fibra
+                                            <div class="col-12">
+                                              <p><h2><img  class="px-2 align-self-center "src="./img/icono_fibra_celeste.png" width="60px" alt="icono fibra optica celeste">  <strong> Inalámbrico</strong></h2></p> 
+                                            </div>  
+                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xl-6 col-xxl-6  ">
+                                              <!--ACA VA DETALLE DEL PLAN-->                                      
+                                              <div class="container-fluid modal-detalle-contratar p-4 ">
+                                                <p><h4><strong>Plan 12 megas<br>
+                                                  $5.110</strong></h4><br>
+      
                                                   <ul>
-                                                    <li>lista 1</li>
-                                                    <li>lista 1</li>
-                                                    <li>lista 1</li>
-                                                    <li>lista 1</li>
-                                                    <li>lista 1</li>
+                                                    <li> Internet 12 MB</li>
+                                                    <li> Velocidad de subida hasta 12 megas</li>
+                                                    <li> Velocidad de bajada hasta 3 megas</li>
+                                                    <li> Módem WiFi</li>
+                                                  
+      
                                                   </ul>
-  
+      
                                                 </p>
                                               </div>
-                                           
+                                              <!--ACA TERMINA DETALLE DEL PLAN--> 
                                             
+                                             </div>
+                                                                          
+                                             <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
+                                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+                                                                     
+                                                
+                                               
+                                              <div  class="formulario-contactos  pt-2"id="container-form">
+                                               
+                                                <form action="" method="POST" class="row  needs-validation" novalidate>
+
+                                                  <h4><strong>Asesor</strong></h4>
+                                                <div class="acerca-alert-invalid visually-hidden alert alert-warning d-none" role="alert">
+                                                    <span class="visually-hidden"></span>
+                                                </div>
+                                                <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                                                    <span class="visually-hidden"></span> Su mensaje no se ha podido enviar, por favor intente nuevamente. 
+                                                </div>
+                                                <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                                                    <span class="visually-hidden">:</span> Mensaje enviado.
+                                                </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaNombre" class="form-label "></label>
+                                                        <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                                                        <div class="invalid-feedback">
+                                                            Es necesario que suministre un nombre
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaEmail" class="form-label "></label>
+                                                        <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                                                        <div class="invalid-feedback">
+                                                            Es necesario que suministre un correo electrónico válido.
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaTelefono" class="form-label"></label>
+                                                        <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="contactFormAcercaMensaje" class="form-label"></label>
+                                                        <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="7"></textarea>
+                                                    </div>
+                                            
+                                                    <div class="d-grid mt-3">
+                                                        <button class="btn button-submit btn-contratar-asesor" type="submit">Enviar Mensaje</button>
+                                                    </div>
+                                                  </form>
+                                              </div>
+                                              </div>
+                                         
+                                        
+                                              <!--ACA TERMINA FORMULARIO DE CONTACTO-->
+                                    
                                           </div>
-                                          <div class="col-6">
-                                              aca va formulario
-                                          </div>
-                                        </div>
-  
-  
+      
+      
                                         </div>
                                           
                                       </div>
                                   </div>  
-                                </div>  
-                            </div> 
-                          <!--FINAL Modales planes-->
-  
-                   </div>
-              </div>
-            
-            </div>
-           </div>
-           <!--FINALIZA UN PLAN 100 megas-->
-           </div>
-           <!--FIN DE CONTENEDOR QUE CONTIENE LOS PLANES FIBRA OPTICA-->  
-        </div>
-  <!--FIN CONTENEDOR PLANES FIBRA OPTICA-->   
-  
-  
-  <!--PLANES DE PLAN WIFI ACA EMPIEZA EL CONTENEDOR-->
-     <div class=" container-fluid col-sm-10 col-md-12 col-lg-10 col-xl-8 col-xxl-8 p-2">
-      <div class="row col-12  titulo-planes justify-content-center text-center">
-       <p><img  src="./img/icono_fibra.png" width="80px" alt=""> <strong> Inalámbrico</strong></p>  
-      </div>
-      <!--CONTENEDOR QUE CONTIENE LOS PLANES-->
-      <div class="row  text-center justify-content-center p-2 ">
-        <!--COMIENZA UN PLAN 4 MG-->
-        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-4 p-2">
-          <div class="plan-wifi p-2">
-           <div class="row align-items-center">
-                 <div class="col-6 p-2">
-                   <img class="img-fluid"src="./img/4_megas.png" alt="imagen 4 megas">
-                 </div>
-                 <div class="col-6 p-2">
-                   <div class="precio-plan-wifi text-start">
-                     <p><strong>$2.203</strong></p>
-                   </div>
-                        <!--Modales de planes-->
-                         <div class=" container-fluid  acciones-planes text-start">  
-                           <div class="legales">
-                           <a type="btn" class="boton-legales text-left" id="abrir">&#129046;<u>Legales</u></a>
-                             <div class="modal_container" id="modal_container">
-                               <div class="modal-js">
-                                 <div class="container d-flex justify-content-end">
-                                   <span class="cerrar " id="cerrar">
-                                     <i class="fa-regular fa-circle-xmark fa-2x "></i>
-                                   </span>
-                                 </div>
-                                 <div class="container">
-                                     <div class="row">
-                                       <div class=" text-left col-12">
-                                         <p><h5>Legales 4 megas</h5></p>
-                                         <hr> 
-                                       </div>
-                                       <div class="col-12 text-left ">
-                                          <p>Servicio sujeto a disponibilidad técnica y geográfica.<br>
-                                            Downstream: hasta 4 Mbps / Upstream: hasta 1 Mbps.<br>                                           
-                                            Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial.<br>
-                                           </p>
-                                       </div>
-                                     </div>
-                                 </div>       
-                               </div>
-                             </div>   
-                           </div>
-                           <div class="cargo-de-instalaciones">
-                           <a type="btn"class="boton-cargo text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
-                               <div class="modal_container" id="modal_container">
-                                   <div class="modal-js">
-                                     <div class="container d-flex justify-content-end">
-                                     <span class="cerrar" id="cerrar">
-                                       <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                                     </span>
-                                     </div>
-                                     <h1>CARGO</h1>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id aperiam ipsam accusamus adipisci, natus est maiores maxime ut quis mollitia nam sequi? Blanditiis beatae commodi delectus. Vitae, tempora. Debitis.
-                                     Harum neque dolor praesentium hic amet beatae quidem excepturi dolore, fugit ipsam maiores necessitatibus blanditiis cum fuga iusto corporis delectus eius, explicabo porro repellat nam laboriosam ratione ea repellendus! Expedita?</p>
-                                     </div>
-                               </div>   
-                           </div>
-                             <div class="contratar">
-                             <button class="boton-contratar" id="abrir">Contratar</button>
-                               <div class="modal_container" id="modal_container">
-                                   <div class="modal-js">
-                                     <div class="container d-flex justify-content-end">
-                                       <span class="cerrar" id="cerrar">
-                                           <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                                       </span>
-                                     </div>  
-                                     <div class="container">
-                                       <div class="row">
-                                       <div class="col-6 ">
-                                         
-                                           <p><img src="./img/icono_fibra.png" alt="">Fibra óptica</p>  
-                                           <div class="container-fluid modal-detalle-contratar ">
-                                             <p>Fibra
-                                               <ul>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                               </ul>
-  
-                                             </p>
-                                           </div>
-                                        
-                                         
-                                       </div>
-                                       <div class="col-6">
-                                           aca va formulario
-                                       </div>
-                                     </div>
-  
-  
-                                     </div>
-                                       
-                                   </div>
-                               </div>  
-                             </div>  
-                         </div> 
-                       <!--FINAL Modales planes-->
-  
-                </div>
-           </div>
-         
-         </div>
-        </div>
-        <!--FINALIZA UN PLAN-->
-    
-        <!--COMIENZA UN PLAN 8 MG-->
-        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-4 p-2">
-          <div class="plan-wifi p-2">
-           <div class="row align-items-center">
-                 <div class="col-6 p-2">
-                   <img class="img-fluid"src="./img/8_megas.png" alt="imagen 8 megas">
-                 </div>
-                 <div class="col-6 p-2">
-                   <div class="precio-plan-wifi text-start">
-                     <p><strong>$3.456</strong></p>
-                   </div>
-                        <!--Modales de planes-->
-                         <div class=" container-fluid  acciones-planes text-start">  
-                           <div class="legales">
-                           <a type="btn" class="boton-legales text-left" id="abrir">&#129046;<u>Legales</u></a>
-                             <div class="modal_container" id="modal_container">
-                               <div class="modal-js">
-                                 <div class="container d-flex justify-content-end">
-                                   <span class="cerrar " id="cerrar">
-                                     <i class="fa-regular fa-circle-xmark fa-2x "></i>
-                                   </span>
-                                 </div>
-                                 <div class="container">
-                                     <div class="row">
-                                       <div class=" text-left col-12">
-                                         <p><h5>Legales 8 megas</h5></p>
-                                         <hr> 
-                                       </div>
-                                       <div class="col-12 text-left ">
-                                          <p>LServicio sujeto a disponibilidad técnica y geográfica.<br>
-                                            Downstream: hasta 8 Mbps / Upstream: hasta 2 Mbps.<br>
-                                            Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial.<br></p>
-                                       </div>
-                                     </div>
-                                 </div>       
-                               </div>
-                             </div>   
-                           </div>
-                           <div class="cargo-de-instalaciones">
-                           <a type="btn"class="boton-cargo text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
-                               <div class="modal_container" id="modal_container">
-                                   <div class="modal-js">
-                                     <div class="container d-flex justify-content-end">
-                                     <span class="cerrar" id="cerrar">
-                                       <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                                     </span>
-                                     </div>
-                                     <h1>CARGO</h1>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id aperiam ipsam accusamus adipisci, natus est maiores maxime ut quis mollitia nam sequi? Blanditiis beatae commodi delectus. Vitae, tempora. Debitis.
-                                     Harum neque dolor praesentium hic amet beatae quidem excepturi dolore, fugit ipsam maiores necessitatibus blanditiis cum fuga iusto corporis delectus eius, explicabo porro repellat nam laboriosam ratione ea repellendus! Expedita?</p>
-                                     </div>
-                               </div>   
-                           </div>
-                             <div class="contratar">
-                             <button class="boton-contratar" id="abrir">Contratar</button>
-                               <div class="modal_container" id="modal_container">
-                                   <div class="modal-js">
-                                     <div class="container d-flex justify-content-end">
-                                       <span class="cerrar" id="cerrar">
-                                           <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                                       </span>
-                                     </div>  
-                                     <div class="container">
-                                       <div class="row">
-                                       <div class="col-6 ">
-                                         
-                                           <p><img src="./img/icono_fibra.png" alt="">Fibra óptica</p>  
-                                           <div class="container-fluid modal-detalle-contratar ">
-                                             <p>Fibra
-                                               <ul>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                               </ul>
-  
-                                             </p>
-                                           </div>
-                                        
-                                         
-                                       </div>
-                                       <div class="col-6">
-                                           aca va formulario
-                                       </div>
-                                     </div>
-  
-  
-                                     </div>
-                                       
-                                   </div>
-                               </div>  
-                             </div>  
-                         </div> 
-                       <!--FINAL Modales planes-->
-  
-                </div>
-           </div>
-         
-         </div>
-        </div>
-        <!--FINALIZA UN PLAN-->
-    
-        <!--COMIENZA UN PLAN 12 MG-->
-        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-4 col-xxl-4 p-2">
-          <div class="plan-wifi p-2">
-           <div class="row align-items-center">
-                 <div class="col-6 p-2">
-                   <img class="img-fluid"src="./img/12_megas.png" alt="imagen 12 megas">
-                 </div>
-                 <div class="col-6 p-2">
-                   <div class="precio-plan-wifi text-start">
-                     <p><strong>$5.110</strong></p>
-                   </div>
-                        <!--Modales de planes-->
-                         <div class=" container-fluid  acciones-planes text-start">  
-                           <div class="legales">
-                           <a type="btn" class="boton-legales text-left" id="abrir">&#129046;<u>Legales</u></a>
-                             <div class="modal_container" id="modal_container">
-                               <div class="modal-js">
-                                 <div class="container d-flex justify-content-end">
-                                   <span class="cerrar " id="cerrar">
-                                     <i class="fa-regular fa-circle-xmark fa-2x "></i>
-                                   </span>
-                                 </div>
-                                 <div class="container">
-                                     <div class="row">
-                                       <div class=" text-left col-12">
-                                         <p><h5>Legales 12 megas</h5></p>
-                                         <hr> 
-                                       </div>
-                                       <div class="col-12 text-left ">
-                                          <p>Servicio sujeto a disponibilidad técnica y geográfica.<br>
-                                            Downstream: hasta 12 Mbps / Upstream: hasta 3 Mbps.<br>
-                                            Servicio habilitado solo para uso personal, está totalmente prohibido su reventa y/o uso comercial.<br>
-                                          </p>
-                                       </div>
-                                     </div>
-                                 </div>       
-                               </div>
-                             </div>   
-                           </div>
-                           <div class="cargo-de-instalaciones">
-                           <a type="btn"class="boton-cargo text-left" id="abrir">&#129046;<u>Cargos de instalación</u></a>
-                               <div class="modal_container" id="modal_container">
-                                   <div class="modal-js">
-                                     <div class="container d-flex justify-content-end">
-                                     <span class="cerrar" id="cerrar">
-                                       <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                                     </span>
-                                     </div>
-                                     <h1>CARGO</h1>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id aperiam ipsam accusamus adipisci, natus est maiores maxime ut quis mollitia nam sequi? Blanditiis beatae commodi delectus. Vitae, tempora. Debitis.
-                                     Harum neque dolor praesentium hic amet beatae quidem excepturi dolore, fugit ipsam maiores necessitatibus blanditiis cum fuga iusto corporis delectus eius, explicabo porro repellat nam laboriosam ratione ea repellendus! Expedita?</p>
-                                     </div>
-                               </div>   
-                           </div>
-                             <div class="contratar">
-                             <button class="boton-contratar" id="abrir">Contratar</button>
-                               <div class="modal_container" id="modal_container">
-                                   <div class="modal-js">
-                                     <div class="container d-flex justify-content-end">
-                                       <span class="cerrar" id="cerrar">
-                                           <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                                       </span>
-                                     </div>  
-                                     <div class="container">
-                                       <div class="row">
-                                       <div class="col-6 ">
-                                         
-                                           <p><img src="./img/icono_fibra.png" alt="">Fibra óptica</p>  
-                                           <div class="container-fluid modal-detalle-contratar ">
-                                             <p>Fibra
-                                               <ul>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                                 <li>lista 1</li>
-                                               </ul>
-  
-                                             </p>
-                                           </div>
-                                        
-                                         
-                                       </div>
-                                       <div class="col-6">
-                                           aca va formulario
-                                       </div>
-                                     </div>
-  
-  
-                                     </div>
-                                       
-                                   </div>
-                               </div>  
-                             </div>  
-                         </div> 
-                       <!--FINAL Modales planes-->
-  
-                </div>
-           </div>
-         
-         </div>
-        </div>
-        <!--FINALIZA UN PLAN-->
-    
-      </div>
-        <!--FIN DE CONTENEDOR QUE CONTIENE LOS PLANES-->  
-     </div>
-  <!--FIN CONTENEDOR PLANES PLAN WIFI--> 
-  
-  <!--PLANES TELEFONIA IP -->      
-   
-     <div class="container col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 ">
-      <div class="row">
-        <div class="robot-planes-abajo col-sm-10 col-md-3 col-lg-3 col-xl-3 col-xxl-3 order-sm-2 order-md-1  mx-4 align-self-center">
-          <img src="./img/robot_planes.png" width="350px"alt="robot planes">
-        </div>
-          <div class="col-sm-10 col-md-7 col-lg-5 col-xl-5 col-xxl-5 order-sm-1 order-md-2 justify-content-center text-center align-self-center">
-            <div class="row col-12  titulo-planes justify-content-center text-center">
-              <p><img  src="./img/icono_wifi.png" width="60px" alt=""> Telefonía <strong>IP </strong></p>  
-            </div>
-            <!--INICIO DE  PLAN DE MES -->
-            <div class="col-sm-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12 plan-mes py-2">
-              <div class="row">
-                <di class="col-4">
-                  <img src="./img/1_mes.png" alt="">
-                </di>
-                <div class="col-4  align-self-center">
-                  <div class="precio-plan-mes ">
-                    <p><strong>$2.203</strong></p>
-                  </div>
-                  <p>+ impuestos</p>
-
-
-                </div>
-                <div class="col-4  align-self-center">
-                
-                  <div class="contratar">
-                    <button class="boton-contratar" id="abrir">Contratar</button>
-                      <div class="modal_container" id="modal_container">
-                          <div class="modal-js">
-                            <div class="container d-flex justify-content-end">
-                              <span class="cerrar" id="cerrar">
-                                  <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                              </span>
-                            </div>  
-                            <div class="container">
-                              <div class="row">
-                              <div class="col-6 ">
-                                
-                                  <p><img src="./img/icono_fibra.png" alt="">Fibra óptica</p>  
-                                  <div class="container-fluid modal-detalle-contratar ">
-                                    <p>Fibra
-                                      <ul>
-                                        <li>lista 1</li>
-                                        <li>lista 1</li>
-                                        <li>lista 1</li>
-                                        <li>lista 1</li>
-                                        <li>lista 1</li>
-                                      </ul>
-
-                                    </p>
-                                  </div>
-                               
-                                
-                              </div>
-                              <div class="col-6">
-                                  aca va formulario
-                              </div>
-                            </div>
-
-
-                            </div>
-                              
-                          </div>
-                      </div>  
-                    </div>  
-
-                </div>
+                              </div>  
+                              <!--FIN DE BOTON CONTRATAR--> 
+                      </div> 
+                    <!--FINAL Modales planes-->
               </div>
 
             </div>
-             <!-- FIN DE  PLAN DE MES -->
+            <div>
+             
+
+
+
+
+
+
+
+            </div>
+
+            </div>
+          
+          </div>
+ 
+        </div>
+        <!--******************FIN PLAN INALAMBRICO*************************-->
+
+
         
-        </div>
-      </div>
-     </div>
-
-
- <!--FIN PLANES TELEFONIA IP -->                  
- </div>
-  <!-------------FIN CONTENEDOR DE PLANES----------------------------->    
+        <!--*****************PLAN DE TELEFONIA IP**************************-->
    
-</section>
-<!--FINALIZA LAS SECCIONES DE PLANES-->
+          <div class="row col-12 align-items-center ">
+           
+              <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12  order-2 order-md-1 order-lg-1 order-xl-1 order-xxl-1">
+                <img class="robot-planes-abajo"src="./img/robot_planes.png" width="140%" alt="">
+              </div>
+         
+               
+                               
+                <div class=" col-sm-12 col-md-9 col-lg-6 col-xl-6 col-xxl-6 order-md-2 order-sm-1  justify-content-center align-items-start">
+                  <div class="titulo-planes pt-5">
+                     <p><img   src="./img/icono_wifi.png" width="60px" alt=""> Telefonía <strong>IP </strong></p>
+                  </div>
+                  <div class=" row plan-mes align-items-center py-3  mx-5 ">
+                    <div class="col-6 precio-plan-mes">
+                      <p><strong>$825,46</strong></p>
+                      <h6>+ impuestos</h6>
+                    </div>
+                    <div class="col-6">
+                      <div class="contratar ">
+                        <button class="boton-contratar" id="abrir">Contratar</button>
+                          <div class="modal_container" id="modal_container">
+                              <div class="modal-js  p-4">
+                                <div class="container d-flex justify-content-end">
+                                  <span class="cerrar" id="cerrar">
+                                      <i class="fa-regular fa-circle-xmark fa-2x"></i>
+                                  </span>
+                                </div>  
+                                <div class="container">
+                                  <div class="row ">
+                                    <div class="col-12 text-start ">
+                                      <p><h2><img  class="px-2 align-self-center "src="./img/icono_fibra_celeste.png" width="60px" alt="icono fibra optica celeste"> Telefonía <strong> IP</strong></h2></p> 
+                                    </div>  
+                                    <div class="col-md-6 col-lg-6 col-sm-12 col-xl-6 col-xxl-6  ">
+                                      <!--ACA VA DETALLE DEL PLAN-->                                      
+                                      <div class="container-fluid modal-detalle-contratar  text-start p-4 ">
+                                        <p><h4><strong>Plan Telefonía IP<br>
+                                        $ 825,46</strong>+ impuestos</h4><br>
+        
+                                          <ul>
+                                            <li> Internet 50 MB</li>
+                                            <li> Velocidad de bajada hasta 100 megas</li>
+                                            <li> Velocidad de subida hasta 50 megas</li>
+                                          
+                                           </ul>
+        
+                                        </p>
+                                      </div>
+                                      <!--ACA TERMINA DETALLE DEL PLAN--> 
+                                    
+                                     </div>
+                                                                  
+                                   <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
+                                   <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+                                                                     
+                                                
+                                               
+                                    <div  class="formulario-contactos  pt-2"id="container-form">
+                                     
+                                      <form action="" method="POST" class="row  needs-validation" novalidate>
+
+                                       <h4 class="text-start"><strong>Asesor</strong></h4>
+                                      <div class="acerca-alert-invalid visually-hidden alert alert-warning d-none" role="alert">
+                                          <span class="visually-hidden"></span>
+                                      </div>
+                                      <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                                          <span class="visually-hidden"></span> Su mensaje no se ha podido enviar, por favor intente nuevamente. 
+                                      </div>
+                                      <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                                          <span class="visually-hidden">:</span> Mensaje enviado.
+                                      </div>
+                                          <div class="">
+                                              <label for="contactFormAcercaNombre" class="form-label "></label>
+                                              <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                                              <div class="invalid-feedback">
+                                                  Es necesario que suministre un nombre
+                                              </div>
+                                          </div>
+                                          <div class="">
+                                              <label for="contactFormAcercaEmail" class="form-label "></label>
+                                              <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                                              <div class="invalid-feedback">
+                                                  Es necesario que suministre un correo electrónico válido.
+                                              </div>
+                                          </div>
+                                          <div class="">
+                                              <label for="contactFormAcercaTelefono" class="form-label"></label>
+                                              <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
+                                          </div>
+                                          <div class="">
+                                              <label for="contactFormAcercaMensaje" class="form-label"></label>
+                                              <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="7"></textarea>
+                                          </div>
+                                  
+                                          <div class="d-grid mt-3">
+                                              <button class="btn button-submit btn-contratar-asesor" type="submit">Enviar Mensaje</button>
+                                          </div>
+                                        </form>
+                                    </div>
+                                    </div>
+                               
+                              
+                                    <!--ACA TERMINA FORMULARIO DE CONTACTO-->
+                                    
+                            
+                                  </div>
+        
+        
+                                </div>
+                                  
+                              </div>
+                          </div>  
+                      </div>  
+                    </div>
+                  
+                  </div>
+                 
+                  
+                </div>
+           
+  
+          </div>
+
+    
+  
+ 
+      
+      </div>
+
+        <!--*****************FIN PLAN TELEFONIA IP*************************-->
+           
+
+    
+   
+
+      
+  </div>
+
+        
+      
+       
+
+  
+  </div>
+
+  <!--FIN CONTENEDOR DE TODOS LOS PLANES-->
+
+
+
+   <!--PLANES TELEFONIA IP -->      
+
+</seccion>
+
 
 
 
 <!--COMIENZA LA SECCION DE CONTACTOS- INFORMACION Y FORMULARIO DE CONTACTO-->
 <section id="contactos">
   <div class="container p-5">
-    <div class="row col-12 justify-content-center">
-     <!--ACA EMPIEZA DATOS DE CONTACTO DE CONTACTO-->
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-4  ">
+    <div class="container col-sm-12 col-md-12 col-lg-10 col-xxl-10 col-xl-10 ">
+    <div class="row  justify-content-center">
+     <!--EMPIEZA DATOS DE CONTACTO DE CONTACTO-->
+      <div class="col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 p-4  ">
         <div class="vias-de-contacto  ">
             
           <p>
@@ -876,54 +1202,59 @@
               
           </div>
         </div>
-
-        
       </div>
-      <!--ACA TERMINA DATOS DE CONTACTO--> 
-     
-
-
-
-      <!--ACA EMPIEZA FORMULARIO DE CONTACTO-->
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-4  ">
-        <div class="formulario-contactos">
-            
-          <form action=""  method="POST"  enctype="multipart/form-data" id="formulario" novalidate >
-
-
-           
-              <div class="mb-3">
-                <input class="form-control" type="text" placeholder="Nombre y Apellido" id="userName" required name="userName" aria-label="default input example" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$"  title="Ingrese sólo letras">
-                <p class="text-primary mb-2 d-none  px-2" id="alertName"></p>
+      <!--TERMINA DATOS DE CONTACTO--> 
+      
+      <!--EMPIEZA FORMULARIO DE CONTACTO-->
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-4  ">
+        <div id="container-form">
+  
+          <form action="" method="POST" class="row  needs-validation" novalidate>
+              <div class="">
+                  <label for="contactFormAcercaNombre" class="form-label "></label>
+                  <input id="contactFormAcercaNombre" placeholder="Nombre y Apellido" type="text" name="nombre" class="form-control" required>
+                  <div class="invalid-feedback">
+                      Es necesario que suministre un nombre
+                  </div>
               </div>
-
-               <div class="mb-3">
-             
-                <input type="email" class="form-control" id="userEmail" id="userEmail" required placeholder="E-mail"  name="userEmail" aria-describedby="emailHelp" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" title="Ingrese un correo válido">
-                <p class="text-primary mb-2 px-2 d-none " id="alertEmail"></p>
+              <div class="">
+                  <label for="contactFormAcercaEmail" class="form-label "></label>
+                  <input id="contactFormAcercaEmail" type="email" name="email" placeholder="E-mail"class="form-control" required>
+                  <div class="invalid-feedback">
+                      Es necesario que suministre un correo electrónico válido.
+                  </div>
               </div>
-              <div class="mb-3">
-                <input class="form-control" type="num" placeholder="Teléfono" id="userTelefono" name="userTelefono" required aria-label="default input example">
-                <p class="text-primary mb-2 px-2 d-none " id="alertTelefono"></p>
+              <div class="">
+                  <label for="contactFormAcercaTelefono" class="form-label"></label>
+                  <input id="contactFormAcercaTelefono" type="tel" name="telefono" placeholder="Teléfono" class="form-control no-validate">
               </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" id="message"rows="6"  name="Mensaje o Consulta" required placeholder="Mensaje o consulta"></textarea>
+              <div class="">
+                  <label for="contactFormAcercaMensaje" class="form-label"></label>
+                  <textarea id="contactFormAcercaMensaje" name="mensaje" class="form-control no-validate" placeholder="Mensaje o consulta" rows="8"></textarea>
               </div>
-            
-              <div class="d-grid">
-                <button type="submit" class="btn btn-envio-formulario">Enviar Mensaje</button>
-                <div class="alert alert-success my-2 d-none" id="alertSuccess"></div>
-             </div>
-     
-          </form>
-     
+              <div class="acerca-alert-invalid visually-hidden alert alert-warning" role="alert">
+                  <span class="visually-hidden">Advertencia:</span> Uno o más campos tienen un error. Por favor revisa e
+                  inténtalo de nuevo.
+              </div>
+              <div class="acerca-alert-error visually-hidden alert alert-danger" role="alert">
+                  <span class="visually-hidden">Advertencia:</span> Lo sentimos, su mensaje no ha podido ser enviado, por
+                  favor vuelva a intentarlo en un momento.
+              </div>
+              <div class="acerca-alert-success visually-hidden alert alert-success" role="alert">
+                  <span class="visually-hidden">Todo ha salido bien:</span> Su mensaje ha sido enviado exitosamente.
+              </div>
+              <div class="d-grid mt-3">
+                  <button class="btn button-submit button-formulario" type="submit">Enviar Mensaje</button>
+              </div>
+            </form>
         </div>
 
         
      </div>
-      <!--ACA TERMINA FORMULARIO DE CONTACTO-->
+      <!-- TERMINA FORMULARIO DE CONTACTO-->
      
     </div>
+  </div>
   </div>
 
 </section>
@@ -932,21 +1263,26 @@
 
 
 <!--COMIENZA LA SECCION DE VELOCIDAD COBERTURA-->
-<section class="velocidad-cobertura-informacion">
-  <div class="container py-5">
-    <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 justify-content-center">
-      <div class="col-sm-10 col-md-6 col-lg-5 col-xl-5 col-xxl-5 boton-cobertura-velocidad m-auto">
-        <a href="./test_de_velocidad.html"> <img src="./img/test_velocidad.png"  alt="zona de cobertura"></a>
-       </div>
-      <div class="col-sm-10 col-md-6 col-lg-5 col-xl-5 col-xxl-5 boton-cobertura-velocidad m-auto">
-        <a href="./zona_de_cobertura.html"><img src="./img/zona_de_cobertura.png" alt="zona de cobertura"></a>
+
+
+<seccion id="cobertura-velocidad">
+  <div class="container-fluid velocidad-cobertura-informacion d-flex align-items-center justify-content-center ">
+    <div class="container">
+    <div class="row justify-content-center align-items-center justify-content-center">
+      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 boton-cobertura-velocidad">
+        <a href="./test_de_velocidad.html"><img class="imagen-boton-cobertura-velocidad" width="100%" height="auto" src="./img/test_velocidad.png" alt="test de velocidad"></a>
       </div>
-    
-   
+      
+      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 boton-cobertura-velocidad">
+        <a href="./zona_de_cobertura.html"><img class="imagen-boton-cobertura-velocidad" width="100%" height="auto" src="./img/zona_de_cobertura.png" alt="zona de cobertura"></a>
+      </div>
+
     </div>
   </div>
   
-</section>
+
+  </div>
+</seccion>
 <!--FINALIZA LA SECCION DE VELOCIDAD COBERTURA-->
 
 
@@ -960,10 +1296,10 @@
 
   <section id="informacion">
   
-    <div class="informacion container-fluid py-5 ">
+    <div class="informacion container py-5 ">
       <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 justify-content-center p-2">
       
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 py-3 ">
+        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 py-3 ">
           <div class="row">
             <div class="col-2">
               <img class="data-fiscal" src="./img/datafiscal.png" alt="data fiscal">
@@ -982,12 +1318,12 @@
             <li><a href="https://www.enacom.gob.ar/centrosatencion/c_1" target="_blank">Enacom</a></li>
            
             <li><a href="./download/Ejemplar-de-Contrato.pdf" target="_blank"download="Ejemplar-de-Contrato.pdf">Ejemplar de Contrato</a></li>
-            <li><a href="" target="_blank"download="Decreto-311-2020.pdf">Política de Privacidad</a></li>
+            <li><a href="./terminos_condiciones_de_uso.html" >Política de Privacidad</a></li>
            </ul>
           </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 py-3">
+        <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 py-3">
           <p>Mesa de ayuda</p>
                   <div>
                       <a><img src="./img/telefono.png" alt="telefono"><strong> 0 800 197 0063</strong></a><br>
@@ -995,7 +1331,7 @@
                   </div>
   
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2 py-3">
+        <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 py-3">
           <p>Comercial</p>
           <div>
               <a><img src="./img/telefono.png" alt="telefono"><strong> 0236 4630063</strong></a>
@@ -1003,7 +1339,7 @@
           </div>
       
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+        <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 py-3">
           <p>Reparación telefonía</p>
           <div>
               <a><img src="./img/telefono.png" alt="telefono"><strong> 0236 4630063</strong></a><br>
@@ -1048,11 +1384,24 @@
   </div>
   </section>
   <!--------FINALIZA SECCION DE WHATSAPP-------->
+
+  
+  <!--ICONO TOP-->
+  <button class="toTop" id="toTop">
+    <svg viewBox="0 0 24 24">
+      <path d="m4 16 8-8 8 8"></path>
+    </svg>
+  </button>
+  <!--FINALIZA ICONO TOP-->
  
 
 </footer>
    
+
+
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+

@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
@@ -7,13 +7,16 @@
     --colorCeleste: #0093D6;
     --colorVerde: #97BE31;
     --colorAzul: #275B9E;
+    --fontGral: 'Poppins', sans-serif;
 
 }
+
 
 
 body {  
     
     background-color: white; 
+
   }  
 
 
@@ -21,10 +24,23 @@ body {
 
 /*****Estilos de nav-celular*/
 
+.nav-desktop{
+    display:block;
+  
+}
+.nav-celular{
+    display: none;
+}
+
+
 .btn-oficina-virtual{
     background-color:var(--colorVerde) !important;
     border-radius: 30px !important;
+   
+}
 
+.btn-oficina-virtual:hover{
+    opacity: 0.3;
     
 }
 
@@ -38,11 +54,12 @@ body {
     text-align: center;
     gap: 5px;
   
+  
 }
 
 .nav-link:hover{
     
-        border-bottom: 3px solid var(--colorCeleste);
+    border-bottom: 3px solid var(--colorCeleste);
 
 }
 
@@ -56,14 +73,15 @@ body {
 
 .navbar-principal{
    
+     border-radius: 40px;
+     background-image: linear-gradient(to bottom ,  #CACFD2, #FFF);
  
-    border-radius: 40px;
- 
-
 }
 
+
+
 .container-menu{
-   
+ 
     gap: 15px;
     font-size: 16px;
 }
@@ -75,6 +93,7 @@ body {
 header{
 
     background-color: var(--colorCeleste);
+    padding-bottom: 10px;
 
 
 }
@@ -92,8 +111,7 @@ background-image: center;
  border-bottom-right-radius: 50em 1.9em;
  font-size: 70px;
  line-height: 4rem;
- font-family: 'Poppins', sans-serif;
- 
+ font-family: var(--fontGral) 
 }
 
 .h6{
@@ -129,7 +147,7 @@ background-image: center;
 .texto-conexion-comunidad{
     font-size: 80px;
     color: black;
-    font-family:'Poppins', sans-serif; ;
+    font-family: var(--fontGral);
 }
 
 
@@ -140,22 +158,44 @@ background-image: center;
 
 /*Estilo Nuestros Planes*/
 
+
+
+
+
+
 .titulo-principal-planes{
-    font-size: 85px;
+    font-size: 80px;
     color: var(--colorCeleste);
-    font-family:'Poppins', sans-serif; 
+    font-family:var(--fontGral)!important; 
+    display: flex;
+    justify-content: end;
 }
+
+
 .titulo-principal-planes strong{
+    color: black;
+}
+.titulo-planes-solo{
+    font-size: 60px;
+    color: var(--colorCeleste);
+    font-family:var(--fontGral)!important; 
+    padding: 20px;
+    display: none;
+
+}
+
+
+.titulo-planes-solo strong{
     color: black;
 }
 
 .robot-planes{
-    width: 400px;
+    width: 350px;
     height: auto;
     position: relative;
     top: 120px;
     right: 80px;
-    
+ 
 
 }
 
@@ -165,8 +205,7 @@ background-image: center;
     position: relative;
     top: 125px;
     cursor: pointer;
-
-    
+ 
 
 }
 
@@ -189,7 +228,7 @@ background-image: center;
          
 }
 .fibra-plan{
-   
+        
     border:white solid;
     border-top-left-radius: 8em 8em;
     border-bottom-left-radius: 8em 8em;
@@ -198,47 +237,55 @@ background-image: center;
     height: 100%;
     width: auto;
     background-color: hsla(0,100%,100%,0.7);
-    font-family: 'Poppins', sans-serif;
- 
+    font-family: var(--fontGral);
   
      
 }
-.plan-wifi{
-    margin-top: 10px;
+.plan-inalambrico{
+  
     border:white solid;
     border-top-left-radius: 8em 8em;
     border-bottom-left-radius: 8em 8em;
     border-top-right-radius: 1em ;
     border-bottom-right-radius: 1em ;
-    height: 90%;
-    width: auto;
+    height: 100%;
+    width: 100%;
     background-color: hsla(0,100%,100%,0.7);
     font-family: 'Poppins', sans-serif;
- 
+   
+  
      
 }
 .plan-mes{
-    margin-top: 10px;
+    
+    
     border:white solid;
     border-top-left-radius: 8em 8em;
     border-bottom-left-radius: 8em 8em;
     border-top-right-radius: 8em 8em ;
     border-bottom-right-radius: 8em 8em ;
-    height: 60%;
-    width: auto;
     background-color: hsla(0,100%,100%,0.7);
+    
+    
 
 }
 
 .precio-plan{
     font-size:40px;
+    
 }
-.precio-plan-wifi{
-    font-size: 25px;
+.precio-plan-inalambrico{
+    font-size: 30px;
+    font-weight: bold;
 }
 .precio-plan-mes{
-    font-size: 40px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+
+  
 }
+
+
 .titulo-planes{
     color: white;
     font-size: 50px;
@@ -248,12 +295,24 @@ background-image: center;
 
 
 
-.boton-legales, .boton-cargo, u{
+
+
+.boton-legales, .boton-cargo {
    
     
     cursor: pointer;
     color: black;
     font-size: 15px;
+    text-decoration: none; 
+  
+}
+
+.boton-legales-inalambrico, .boton-cargo-inalambrico {
+   
+    
+    cursor: pointer;
+    color: black;
+    font-size: 13px;
     text-decoration: none; 
   
 }
@@ -271,7 +330,6 @@ u:hover{
     font-size: 18px;
     border-radius: 30px;
     cursor: pointer;
-    margin-top: 5px;
     padding-top:3px ;
     padding-bottom: 3px;
     padding-left: 10px;
@@ -286,12 +344,13 @@ u:hover{
 
 .robot-planes-abajo{
     position: relative;
-    top:60px;
+    top:90px;
+ 
 }
 
 .robot-planes-abajo:hover{
     position: relative;
-    top:65px;
+    top:80px;
     cursor: pointer;
 }
 
@@ -305,6 +364,7 @@ u:hover{
 /*Estilos de modales*/
 
 .modal_container{
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,27 +375,32 @@ u:hover{
     position: fixed;
     opacity: 0;
     background-color: rgba(0,0,0,0.3);
-    top: 0;
+    top: 0px;
     left: 0;
     height: 100vh;
     width: 100vw;
     transition: opacity 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    
   
 }
 
 .modal_container.show{
     pointer-events: auto;
     opacity: 1;
+    z-index: 2;
 
 }
 .modal-js{
     background-color: #fff;
-
     padding: 30px 50px;
     width: 900px;
     max-width: 100%;
     border-radius: 22px;
     z-index:1;
+    overflow: auto;
+        
+     
 }
 
 
@@ -392,20 +457,43 @@ u:hover{
 
 
 /*Seccion Formulario Contacto*/
-.form-control
-{
-    border-radius: 22px !important;
-    background-color: white !important;
+
+#container-form {
+    display: flex;
+    justify-content: center;
+    
 }
 
-.btn-envio-formulario{
-    background-color: var(--colorAzul) !important;
-    border-radius: 22px !important;
-    color: white !important;
+.acerca-alert-invalid{
+    font-size: 14px;
 }
-.btn-envio-formulario:hover {
+
+
+.form-control.no-validate:valid {
+    border-color: var(--bs-gray-400);
+    background-image: url('');
+}
+
+.form-control.no-validate:valid:focus {
+    border-color: var(--colorAzul);
+}
+
+
+
+
+.form-control{
+border-radius: 22px !important;
+background-color: white !important;
+}
+
+.button-formulario{
+background-color: var(--colorAzul) !important;
+border-radius: 22px !important;
+color: white !important;
+}
+.button-formulario:hover {
     background-color: var(--colorCeleste) !important;
- 
+
 }
 
 .btn-contratar-asesor{
@@ -430,6 +518,15 @@ u:hover{
 /*Fin seccion Formulario Contacto*/
 
 
+
+/*****SECCION FORMULARIO DE CONTACTO***/
+
+
+
+/***********************************/
+
+
+
 /******Fin seccion contactos*******/
 
 
@@ -443,15 +540,17 @@ u:hover{
      
 
 }
-  .boton-cobertura-velocidad{
+.boton-cobertura-velocidad{
     position: relative;
-    bottom: 150px;
+    bottom: 120px;
+
   }
 
 
 .boton-cobertura-velocidad:hover{
    opacity: 0.8;
    cursor: pointer;
+ 
  
 }
 
@@ -511,7 +610,36 @@ footer{
 }
 /***Fin estilos de Footer****/
 
+/* Botón Subir */
+.toTop {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    transition: opacity 0.5s, transform 0.3s;
+    /* posición */
+    position: fixed; right: 1rem; bottom: 1rem; z-index: 0;
+  }
+  .toTop:not(.is-visible) {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  .toTop svg {
+    stroke-width: 3px;
+    stroke: currentColor;
+    fill: none;
+    width: 24px;
+  }
+  /* Personalizar */
+  .toTop {
+    background-color: var(--colorCeleste);
 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: #fff;
+  }
+  
 
 /*************BOTON WHATSAPP*****************/
 a{
@@ -520,13 +648,15 @@ a{
   #whatsapp {
       position: fixed;
       bottom: 15px;
-      right:15px;
+      left:15px;
+      
   }
   svg {
       width: 80px;
       display: inline-block;
       vertical-align: middle;
       filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+      
   }
   circle {
     fill: #25d366;
@@ -537,21 +667,7 @@ a{
 
   #whatsapp a {padding: 20px 0px;}
 
-  #whatsapp a::before {
-      content: 'Te asesoramos por whatsapp';
-      display: inline-block;
-      vertical-align: middle;
-      padding: 5px 10px;
-      margin-right: 10px;
-      color: rgba(0, 0, 0, 1);
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 20px;
-      filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
-      transition: .3s ease;
-      opacity: 0;
-      font-family: 'Poppins', sans-serif; 
-  }
+
   #whatsapp:hover a::before {opacity: 1;}
 
 
@@ -560,71 +676,419 @@ a{
 
 
 
-/*Responsive Menu***/
 
 
 
 
 
-@media screen and (max-width: 640px) {
+
+/*****************Responsive Menu*********************/
+
+@media screen and (max-width: 576px) {
+
+
+    /*Visualizacion de Menu*/
     .nav-desktop{
         display:none;
     }
     .nav-celular{
         display: block;
     }
+    /*********************/
+
+
+    /**********Principal**********/
     .principal{
         padding: 50px;
       
     }
+
+    .imagen-robot-principal{
+        position: relative;
+        top:10px;
+    } 
+
+    .imagen-robot-principal:hover{
+        position: relative;
+        top: 15px;
+        cursor: pointer;
+    } 
+
+       
+
+    .imagen-robot-principal{
+        position: relative;
+        top: 10px;
+    } 
+    .imagen-robot-principal:hover{
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+    } 
+
+
+    /*Sección conexion-comunidad*/
+
+    .texto-conexion-comunidad{
+        font-size: 30px;
+        
+    }
+   /**************************/
+    
+    
+    /******Seccion Planes*****/
    
+    .modal-js{
+        background-color: #fff;
+        padding: 30px 50px;
+        width: 500px;
+        height: 600px;
+        max-width: 90%;
+        border-radius: 22px;
+        z-index:1;
+        overflow: auto;
+        
+    }
 
 
+    .img-plan-inalambrico{
+        width: 130px;
+    }
 
+
+    .robot-planes-abajo{
+        width: 300px;
+        position: relative;
+        top:10px;
+    }
   
+    .robot-planes-abajo:hover{
+        position: relative;
+        top:20px;
+        cursor: pointer;
+    }
+
+    
+   .robot-planes{
+    display: none;
+           
+    }
+
+    /***************************/
+
+
+
+    .formulario-contactos{
+        padding-top: 50px;
+    }
+
+
+    .titulo-principal-planes{
+      display: none;
+    }
+    
+  
+    
+    
+    .robot-planes{
+       display: none;
+     
+    
+    }
+
+    
+
+    .titulo-planes-solo{
+        font-size: 40px;
+        padding-top: 30px;
+        display: block;
+    }
+
+    .imagen-boton-cobertura-velocidad{
+      padding: 30px;
+      }
+    
+ 
 }
 
 
 
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+
+
+/*Visualizacion de menu*/
+.nav-desktop{
+    display:none;
   
- 
-  
-  
-  @media screen and (min-width: 640px) and (max-width: 999px) {
-    .nav-desktop{
-        display:none;
-    }
-    .nav-celular{
-        display: block;
-    }
- 
+}
+
+.nav-celular{
+    display: block;
+}
+
+.container-menu{
+    gap: 5px;
+    font-size: 14px;
+}
+
+
+
+/*********************/
+
+
+/*****Seccion Principal******/
 
 
     .principal{
         padding: 50px;
       
     }
-    
-    /*Menu responsive JS*/
-    .nav-bar{
-        display:none;
+/*****************************/
+
+  
+    .texto-conexion-comunidad{
+        font-size: 35px;
+        
     }
-    .menu{
-        margin-left: 0;
-        display: flex;
+   
+   
+/****Sección Planes****/ 
+  
+
+    .modal-js{
+        background-color: #fff;
+        padding: 30px 50px;
+        width: 500px;
+        height: 600px;
+        max-width: 90%;
+        border-radius: 22px;
+        z-index:1;
+        overflow: auto;
+        
     }
+
+  
+ /**********************/ 
+
+ .titulo-principal-planes{
+    display: none;
+  }
+  
+.robot-planes{
+    display: none;
+ 
+
+}
+
+.titulo-planes-solo{
+    font-size: 50px;
+    padding-top: 30px;
+    display: block;
+  
+}
+
+
+.robot-planes-abajo{
+    width: 300px;
+    position: relative;
+    top:10px;
+    right: 40px;
+}
+
+.robot-planes-abajo:hover{
+    position: relative;
+    top:20px;
+    cursor: pointer;
+}
+
+.boton-cobertura-velocidad{
+    position: relative;
+    bottom: 80px;
+     
+
+  }
+  .imagen-boton-cobertura-velocidad{
+    width: 100%;
+  }
+
 
 
 
   }
-  
-  @media screen and (min-width: 1000px) {
-    .nav-desktop{
-        display:block;
-      
-    }
-    .nav-celular{
-        display: none;
-    }
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+
+/*Visualizacion de menu correspondiente*/
+.nav-desktop{
+    display:block;
+ 
+}
+.nav-celular{
+    display: none;
+}
+
+.container-menu{
+ 
+    gap: 10px;
+    font-size: 14px;
+}
+
+.container-menu{
+    gap: 5px;
+    font-size: 14px;
+}
+
+.logo-oficina{
+    width:70px;
+    height: auto;
+}
+
+.titulo-principal-planes{
+    font-size: 40px;
+   
+}
+
+
+
+.robot-planes{
+    width: 250px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    right: 40px;
+ 
 
 }
+
+.robot-planes:hover{
+   
+  
+    position: relative;
+    top: 70px;
+    cursor: pointer;
+ 
+
+}
+
+
+/*********************/
+
+/****Conexión Comunidad****/
+
+
+.texto-conexion-comunidad{
+    font-size: 60px ;
+}
+
+
+
+/*Secciones Planes*/
+
+    .img-plan-inalambrico{
+        width: 90px;
+        
+    }
+    .boton-contratar{
+        font-size: 14px;
+    }
+
+
+
+   
+
+    .titulo-principal-planes{
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+    }
+       
+
+    /*********************/    
+    .modal-js{
+        background-color: #fff;
+        padding: 30px 50px;
+        width: 500px;
+        height: 600px;
+        max-width: 90%;
+        border-radius: 22px;
+        z-index:10;
+        overflow: auto;
+    
+}
+
+.boton-cobertura-velocidad{
+    position: relative;
+    bottom: 80px;
+  
+
+  }
+
+
+  
+
+
+    
+ 
+     
+    
+    }
+    
+
+   
+    
+   
+    
+
+
+@media screen and (min-width: 1200px) and (max-width:2500) {
+
+/*Visualizacion de menu correspondiente*/
+.nav-desktop{
+    display:block;
+  
+}
+.nav-celular{
+    display: none;
+}
+
+
+/*********************/
+
+
+/**Planes**/
+
+
+   
+   } 
+
+  
+ 
+  
+  
+ 
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

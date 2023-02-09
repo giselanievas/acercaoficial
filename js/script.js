@@ -20,18 +20,6 @@ for(let i= 0; i < abrir.length; i++){
 
 
 
-const formulario = document.getElementById('formulario');
-
-const userName = document.getElementById('userName');
-const userEmail = document.getElementById('userEmail');
-const userTelefono = document.getElementById('userTelefono');
-const regUserTelefono = / ^\d{10}$/;
-const regUserName = /[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/;
-const regUserEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-const alertSuccess = document.getElementById('alertSuccess');
-const alertEmail = document.getElementById('alertEmail');
-const alertName = document.getElementById('alertName');
-const alertTelefono = document.getElementById('alertTelefono');
 
 
 
@@ -39,97 +27,92 @@ const alertTelefono = document.getElementById('alertTelefono');
 
 
 
-const mostrarAlertExito = () =>{
-
-    alertSuccess.classList.remove("d-none");
-    alertSuccess.innerHTML = "Mensaje enviado con éxito";
-  
-    
-}
 
 
 
-const mostrarAlertError = (errores) => {
-   
-    errores.forEach((item) =>{
-        item.tipo.classList.remove("d-none");
-        item.tipo.textContent = item.msg;
-       
-        
-    });
-};
+/***SCROLL */
+
+const toTop = (() => {
+  let button = document.getElementById("toTop");
+  window.onscroll = () => {
+    button.classList[
+        (document.documentElement.scrollTop > 200) ? "add" : "remove"
+      ]("is-visible")
+  }
+  button.onclick = () => {
+    window.scrollTo({
+      top:0, behavior:"smooth"
+    })
+  }
+})();
+/**FIN SCROLL */
 
 
 
+/****FORMULARIO DE ENVIO */
+(() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
 
+    Array.from(forms).forEach(form => {
+        const buttonSubmit = form.querySelector('button.button-submit');
 
-formulario.addEventListener("submit", (e)=>{
-    e.preventDefault();
-  
-    alertSuccess.classList.add("d-none");
+        buttonSubmit.addEventListener('click', event => {
+        })
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault()
+            event.stopPropagation()
+            if (!form.checkValidity()) {
+                form.querySelector("div.acerca-alert-invalid").classList.remove("visually-hidden");
+                form.classList.add('was-validated')
+            } else {
+                form.querySelector("div.acerca-alert-invalid").classList.add("visually-hidden");
+                form.querySelector("div.acerca-alert-error").classList.add("visually-hidden");
+                const spinner = document.createElement('SPAN');
+                spinner.classList.add('spinner-border');
+                spinner.classList.add('spinner-border-sm');
+                while (buttonSubmit.firstChild) {
+                    buttonSubmit.removeChild(buttonSubmit.firstChild);
+                }
+                buttonSubmit.appendChild(spinner);
+                buttonSubmit.appendChild(document.createTextNode(' Enviando...'))
+                const data = new FormData(event.currentTarget);
 
-    const errores = [];
+                let goodResponse = true;
+                const resData = await fetch('http://acerca.grupodev:1717', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(Object.fromEntries(data))
+                })
+                    .then(r => {
+                        if (r.status != 200) {
+                            throw new Error('');
+                        }
+                        return r.json();
+                    })
+                    .catch(() => { goodResponse = false; });
+                if (goodResponse) {
+                    form.querySelector("div.acerca-alert-success").classList.remove("visually-hidden");
+                    form.reset();
+                    form.classList.remove('was-validated')
+                    setTimeout(() => {
+                        form.querySelector("div.acerca-alert-success").classList.add("visually-hidden");
+                    }, 5000)
+                } else {
+                    form.querySelector("div.acerca-alert-error").classList.remove("visually-hidden");
+                }
+                while (buttonSubmit.firstChild) {
+                    buttonSubmit.removeChild(buttonSubmit.firstChild);
+                }
+                buttonSubmit.appendChild(document.createTextNode('Enviar'))
+            }
 
-    if (!regUserName.test(userName.value)|| !userName.value.trim() ){
-           
-            errores.push({
-            tipo: alertName,
-            msg:"Formato no válido en el campo nombre, solo letras",
-                  
-        });
-       
-             
-       } else{
-            alertName.classList.add('d-none');
-    
-       }
-    if (!regUserTelefono.test(userTelefono.value)|| !userTelefono.value.trim() ){
-           
-            errores.push({
-            tipo: alertTelefono,
-            msg:"Formato de teléfono inválido",
-                  
-        });
-       
-             
-       } else{
-            alertTelefono.classList.add('d-none');
-    
-       }
+        }, false)
+    })
+})()
 
-    if (!regUserEmail.test(userEmail.value)|| !userEmail.value.trim() ){
-      
-        errores.push({
-            tipo: alertEmail,
-            msg:"Escriba un correo válido",
-        });
-
-        } else{
-             alertEmail.classList.add('d-none');
-         
-        }
-
-          if(errores.length !== 0){
-            mostrarAlertError(errores)
-          
-            return;
-           } else{
-            mostrarAlertExito();
-
-           }
-
-       
-            
-    }
-  
-  
-   
-);
-
-
-
-
-
-
+/***FORMULARIO DE ENVIO */
 
 
