@@ -12,22 +12,21 @@
     <link rel="shortcut icon"  href="./img/acerca.png" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
-
 <header>
 
   <!--SECCION DE MENU DE CELULAR-TABLET-ESCRITORIO-->
   <section class="menus"> 
   
     <!--MENU PARA CELULAR-->
-  
+  <div class="container-fluid-12">
    <div class="nav-celular">
     <nav class="navbar bg-light">
        <div class="container-fluid">
-           <a class="navbar-brand btn btn-lin" href="https://www.acerca.com.ar"><img src="./img/logo_acerca.png" alt=""></a>
+           <a class="navbar-brand btn btn-lin" href="https://www.acerca.com.ar"><img src="./img/logo_acerca.png" alt="logo acerca"></a>
          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
            <span class="navbar-toggler-icon"></span>
          </button>
-         <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+         <div class="offcanvas offcanvas-end color-menu-celular " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
           
              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -35,14 +34,18 @@
            <div class="offcanvas-body menu-celular">
            
                <ul class="navbar-nav  flex-grow-1 pe-3">
-                   <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#planes"><strong>Planes</strong></a>
+                  <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./index.html#planes"><strong>Planes</strong></a>
                      </li>
                    <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#contactos"><strong>Contacto</strong></a>
-                   </li>
+                     <a class="nav-link active"   aria-current="page" href="./index.html#contactos"><strong>Contacto</strong></a>
+                   </li> 
+  
                    <li class="nav-item">
-                       <a class="nav-link active" href="./zona_de_cobertura.html"><strong>Zona de cobertura</strong></a>
+                       <a class="nav-link active py-2" href="./zona_de_cobertura.html"><strong>Zona de cobertura</strong></a>
+                     </li>
+                   <li class="nav-item">
+                       <a class="nav-link active" href="./test_de_velocidad.html"><strong>Test de velocidad</strong></a>
                      </li>
                    <li class="nav-item">
                      <a class="nav-link active" target="_blank" href="https://mail.acerca.com.ar/webmail/"><strong>Webmail</strong></a>
@@ -62,6 +65,7 @@
     </nav>
    </div>
   
+  
    <!--FINALIZA MENU PARA CELULAR-->
   
    <!--EMPIEZA MENU PARA ESCRITORIO/TABLET-->
@@ -70,8 +74,8 @@
     
   
   
-  <div class="container nav-desktop   ">
-   <div class="container col-11 ">
+  <div class="container nav-desktop ">
+   <div class=" container col-10 ">
        <div class="row text-center  pt-5">
          <nav class="navbar-principal navbar navbar-expand-lg shadow-lg ">
            <div class="col-4 text-start">
@@ -85,10 +89,10 @@
            <div class=" col-6 row  collapse navbar-collapse container-menu" id="navbarNav">
                <ul class="navbar-nav">
                  <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#planes"><strong>Planes</strong></a>
+                     <a class="nav-link active" aria-current="page" href="./index.html#planes"><strong>Planes</strong></a>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="http://acerca.grupodev/#contactos"><strong>Contacto</strong></a>
+                     <a class="nav-link active" aria-current="page" href="./index.html#contactos"><strong>Contacto</strong></a>
                    </li>
                    <li class="nav-item">
                      <a class="nav-link active" aria-current="page" target="_blank" href="https://mail.acerca.com.ar/webmail/"><strong>Webmail</strong></a>
@@ -102,21 +106,21 @@
              </ul>
   
            </div>
-           <div class="col-2  ">
-             <a class="navbar-brand btn btn-link" href="https://oficinavirtual.grupojunin.com.ar/login" target="_blank"> <button class="btn btn-light btn-oficina-virtual "><img src="./img/logo_oficina_virtual.png" alt="btn oficina virtual"></button></a>
+           <div class="row col-2  ">
+             <a class="navbar-brand btn btn-link" href="https://oficinavirtual.grupojunin.com.ar/login" target="_blank"> <button class="btn btn-light btn-oficina-virtual "><img class="logo-oficina" src="./img/logo_oficina_virtual.png" alt="btn oficina virtual"></button></a>
            </div>
          </nav>
        </div>
    </div> 
   </div>
     <!--FINALIZA MENU PARA ESCRITORIO/TABLET-->
-  
+  </div>
   </section> 
   <!--FINALIZA SECCION DE MENU DE CELULAR-TABLET-ESCRITORIO-->
   </header>
   
   
-<body>
+<body class="body-margin">
     <main>
      
         <div class="container-fluid">
@@ -182,7 +186,7 @@
               <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2 py-3">
                 <p>Reparación telefonía</p>
                 <div>
-                    <a><img src="./img/telefono.png" alt="telefono"><strong> 0236 4630063</strong></a><br>
+                    <a><img src="./img/telefono.png" alt="telefono"><strong> 0236 4630064</strong></a><br>
                    
                 </div>
               </div>
@@ -197,8 +201,8 @@
         <div class="container-fluid d-flex justify-content-center py-5">
          <div class="row">
             <div class="container-fluid d-flex justify-content-center align-self-center logos-footer">
-               <a href="https://acerca.com.ar"><img src="./img/logo_acerca_transparente.png" alt="logo acerca"></a>
-               <a href="https://gruposerviciosjunin.com.ar/"><img src="./img/logo_grupo_junin.png" alt="logo grupo junin"></a>
+               <a href="https://acerca.com.ar"><img src="./img/logo_acerca_transparente.png" width="80%" alt="logo acerca"></a>
+               <a href="https://gruposerviciosjunin.com.ar/"><img src="./img/logo_grupo_junin.png" width="80%" alt="logo grupo junin"></a>
               </div>
             <div class="container-fluid d-flex justify-content-center py-4" >
                <p> Acerca 2023. Todos los derechos reservados.</p>
@@ -238,9 +242,12 @@
       </footer>
          
       
-  
-  
-      <script src="./js/bootstrap.bundle.min.js"></script>
-      <script src="./js/script.js"></script>
-  </body>
-  </html>
+      
+         
+          <!-- jQuery and Bootstrap js -->
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+          <script src="./js/bootstrap.bundle.min.js"></script>
+          <script src="./js/script.js"></script>
+      </body>
+      </html>
+      

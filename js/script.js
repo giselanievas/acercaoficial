@@ -1,3 +1,13 @@
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
+
+
+
+
+
+
 //Interación de Modales //
 const cerrar = document.querySelectorAll('#cerrar');
 const  modal_container = document.querySelectorAll('#modal_container');
@@ -14,21 +24,6 @@ for(let i= 0; i < abrir.length; i++){
 };
 
 //Fin de interaccion de Modales //
-
-// Script de formulario//
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***SCROLL */
 
@@ -106,7 +101,7 @@ const toTop = (() => {
                 while (buttonSubmit.firstChild) {
                     buttonSubmit.removeChild(buttonSubmit.firstChild);
                 }
-                buttonSubmit.appendChild(document.createTextNode('Enviar'))
+                buttonSubmit.appendChild(document.createTextNode('Enviar Mensaje'))
             }
 
         }, false)
@@ -114,5 +109,7 @@ const toTop = (() => {
 })()
 
 /***FORMULARIO DE ENVIO */
+
+
 
 

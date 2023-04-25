@@ -64,10 +64,23 @@ body {
 }
 
 
+
+
 /*******Fin de estilos de nav-celular*****/
 
 
 /******Estilos de nav desktop****/
+
+
+.fixed-top-2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+
 
 
 
@@ -79,7 +92,6 @@ body {
 }
 
 
-
 .container-menu{
  
     gap: 15px;
@@ -88,56 +100,6 @@ body {
 
 
 
-
-/****Estilos de Header*****/
-header{
-
-    background-color: var(--colorCeleste);
-    padding-bottom: 10px;
-
-
-}
-.principal{
-background-image: url(../img/imagen_principal.png);
-background-image: no-repeat;
-background-image: fixed;
-background-image: center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
- background-size: cover;
- background-position: center;
- border-bottom-left-radius: 50em 1.9em;
- border-bottom-right-radius: 50em 1.9em;
- font-size: 70px;
- line-height: 4rem;
- font-family: var(--fontGral) 
-}
-
-.h6{
-
-    font-size: 20px !important; 
-}
-
-.linea{
-    border-radius: 40px;
-    color: var(--colorVerde);
-}
-
-.imagen-robot-principal{
-    position: relative;
-    top: 45px;
-} 
-.imagen-robot-principal:hover{
-    position: relative;
-    top: 50px;
-    cursor: pointer;
-} 
-
-
-
-
-/*Fin estilos Header*/
 
 
 
@@ -152,12 +114,12 @@ background-image: center;
 
 
 
+
 /*Fin estilos conexion-comunidad*/
 
 
 
 /*Estilo Nuestros Planes*/
-
 
 
 
@@ -271,7 +233,7 @@ background-image: center;
 }
 
 .precio-plan{
-    font-size:40px;
+    font-size:50px;
     
 }
 .precio-plan-inalambrico{
@@ -397,7 +359,19 @@ u:hover{
     width: 900px;
     max-width: 100%;
     border-radius: 22px;
-    z-index:1;
+    overflow: auto;
+    position: absolute;
+    z-index: 100;
+        
+     
+}
+.modal-js-chico{
+    background-color: #fff;
+    padding: 30px 50px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 22px;
+    z-index:100;
     overflow: auto;
         
      
@@ -490,6 +464,7 @@ background-color: white !important;
 background-color: var(--colorAzul) !important;
 border-radius: 22px !important;
 color: white !important;
+
 }
 .button-formulario:hover {
     background-color: var(--colorCeleste) !important;
@@ -684,7 +659,10 @@ a{
 
 /*****************Responsive Menu*********************/
 
-@media screen and (max-width: 576px) {
+
+
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
 
 
     /*Visualizacion de Menu*/
@@ -698,22 +676,16 @@ a{
 
 
     /**********Principal**********/
-    .principal{
-        padding: 50px;
-      
+    
+    #conteItemCarrusel{
+   
+        height:200px;
+        overflow: hidden;
+       
     }
 
-    .imagen-robot-principal{
-        position: relative;
-        top:10px;
-    } 
-
-    .imagen-robot-principal:hover{
-        position: relative;
-        top: 15px;
-        cursor: pointer;
-    } 
-
+    
+   
        
 
     .imagen-robot-principal{
@@ -730,8 +702,15 @@ a{
     /*Sección conexion-comunidad*/
 
     .texto-conexion-comunidad{
-        font-size: 30px;
+        font-size: 20px;
         
+    }
+
+
+    .img-conexion-comunidad{
+   
+        width: 55px;
+    
     }
    /**************************/
     
@@ -759,7 +738,7 @@ a{
     .robot-planes-abajo{
         width: 300px;
         position: relative;
-        top:10px;
+        top:25px;
     }
   
     .robot-planes-abajo:hover{
@@ -774,6 +753,8 @@ a{
            
     }
 
+   
+
     /***************************/
 
 
@@ -787,8 +768,7 @@ a{
       display: none;
     }
     
-  
-    
+ 
     
     .robot-planes{
        display: none;
@@ -796,6 +776,10 @@ a{
     
     }
 
+    .precio-plan{
+        font-size:30px;
+        
+    }
     
 
     .titulo-planes-solo{
@@ -807,14 +791,28 @@ a{
     .imagen-boton-cobertura-velocidad{
       padding: 30px;
       }
-    
+
+    .titulo-planes{
+        font-size: 30px;
+
+    }
+
+    .color-menu-celular{
+        opacity: 0.8;
+    }
+   
+    .slider-en-celular {
+        padding-top: 40px;
+    }
+  
+   
  
 }
 
 
 
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
 
 
@@ -840,11 +838,14 @@ a{
 
 /*****Seccion Principal******/
 
+#conteItemCarrusel{
+   
+    height:400px;
+    overflow: hidden;
+   
+}
 
-    .principal{
-        padding: 50px;
-      
-    }
+
 /*****************************/
 
   
@@ -912,6 +913,23 @@ a{
   .imagen-boton-cobertura-velocidad{
     width: 100%;
   }
+
+  .precio-plan{
+    font-size:30px;
+    
+}
+
+.contenedor-telefonia-ip{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.plan-para-celular{
+    display: none;
+}
+
+.color-menu-celular{
+    opacity: 0.85;
+}
 
 
 
@@ -991,6 +1009,8 @@ a{
 
 /*Secciones Planes*/
 
+
+
     .img-plan-inalambrico{
         width: 90px;
         
@@ -1031,14 +1051,10 @@ a{
   }
 
 
-  
 
 
-    
- 
-     
-    
-    }
+
+}
     
 
    
@@ -1057,16 +1073,30 @@ a{
 .nav-celular{
     display: none;
 }
-
-
 /*********************/
+
+
+
+#conteItemCarrusel{
+   
+    height: 700px;
+
+    overflow: hidden;
+   
+}
+
+
+}
+
+
+
 
 
 /**Planes**/
 
 
    
-   } 
+   
 
   
  
